@@ -1,0 +1,107 @@
+[  
+    {
+        "question": "HTML je programski jezik.",
+        "type": "truefalse",
+        "correct": "false"
+    },
+    {
+        "question": "HTML je __________ jezik.",
+        "type": "short",
+        "correct": "označiteljski"
+    },
+    {
+        "question": "HTML je označiteljski jezik.",
+        "type": "truefalse",
+        "correct": "true"
+    },
+    {
+        "question": "HTML definira značenje i strukturu sadržaja mrežnih stranica.",
+        "type": "truefalse",
+        "correct": "true"
+    },
+    {
+        "question": "HTML se sastoji od _________ kojima se označavaju tekst, slike i drugi sadržaji.",
+        "type": "short",
+        "correct": "oznaka"
+    },
+    {
+        "question": "Oznaka <_____> koristi se za označavanje naslova u HTML-u.",
+        "type": "short",
+        "correct": "title"
+    },
+    {
+        "question": "Oznaka <_____> označava vidljivi dio HTML dokumenta.",
+        "type": "short",
+        "correct": "body"
+    },
+    {
+        "question": "Kako se označava korijenski element HTML dokumenta? <______>.",
+        "type": "short",
+        "correct": "html"
+    },
+    {
+    "question": "Označi elemente koji se koriste za označavanje metapodataka dokumenta:",
+    "type": "multiple",
+    "options": ["head", "title", "base", "body","hr","p"],
+    "correct": ["head", "title", "base"]
+    },
+    {
+    "question": "Označi elemente koji se koriste za označavanje metapodataka dokumenta:",
+    "type": "multiple",
+    "options": ["link", "meta", "style", "iframe","caption","br"],
+    "correct": ["link", "meta", "style"]
+    },
+    {
+    "question": "Koji elementi pripadaju odjeljcima?",
+    "type": "multiple",
+    "options": ["body", "section", "article", "nav","div","header"],
+    "correct": ["body", "section", "article", "nav"]
+    },
+    {
+    "question": "Koji od sljedećih elemenata ne pripada grupiranju?",
+    "type": "single",
+    "options": ["p", "blockquote", "iframe", "ul"],
+    "correct": "iframe"
+    },
+    {
+    "question": "Koji od sljedećih elemenata pripadaju semantici na razini teksta?",
+    "type": "multiple",
+    "options": ["em", "strong", "abbr", "div","header"],
+    "correct": ["em", "strong", "abbr"]
+    },
+    {
+    "question": "Koji elementi pripadaju ugrađenim dijelovima?",
+    "type": "multiple",
+    "options": ["img", "video", "canvas", "audio","map"],
+    "correct": ["img", "video", "canvas", "audio","map"]
+    },
+    {
+    "question": "Koji od sljedećih elemenata pripadaju tablicama?",
+    "type": "multiple",
+    "options": ["table", "caption", "colgroup", "tbody","div"],
+    "correct": ["table", "caption", "colgroup", "tbody"]
+    },
+    {
+    "question": "Koji element ne pripada semantici na razini teksta?",
+    "type": "single",
+    "options": ["em","abbr","iframe","strong"],
+    "correct": "iframe"
+    },
+    {
+    "question": "Oznaka summary pripada:",
+    "type": "single",
+    "options": ["interaktivnim elementima","skriptama", "tablicama", "formama"],
+    "correct": "interaktivnim elementima"
+    },
+    {
+    "question": "Atributi zajednički za sve elemente zovu se ________ atributi",
+    "type": "short",
+    "correct": "globalni"
+    },
+    {
+    "question": "Prikazani kod je ispravan.",
+    "type": "truefalse",
+    "image": "../img/ispr_kod.png",
+    "correct": "true"
+    }
+]

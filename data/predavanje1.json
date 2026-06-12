@@ -1,0 +1,103 @@
+[
+  {
+    "question": "Kolegij Oblikovanje mrežnih stranica nosi __ ECTS-a za jednopredmetni studij.",
+    "type": "short",
+    "correct": "5"
+  },
+  {
+    "question": "Kolegij Oblikovanje mrežnih stranica nosi __ ECTS-a za dvopredmetni studij.",
+    "type": "short",
+    "correct": 3
+  },
+  {
+    "question": "Označi koje stranice možeš koristiti kao literaturu ili kao pomoć na vježbama:",
+    "type": "multiple",
+    "options": ["W3Schools", "W3C", "CodeCademy", "Wikipedija"],
+    "correct": ["W3Schools", "W3C", "CodeCademy"]
+  },
+  {
+    "question": "Tko je napisao članak Information Management: A Proposal?",
+    "type": "short",
+    "correct": "Tim Berners-Lee"
+  },
+  {
+    "question": "Kako se zove članak koji je 1989. godine napisao Tim Berners-Lee?",
+    "type": "short",
+    "correct": "information management a proposal"
+  },
+  {
+    "question": "Kako se zove prvi preglednik mrežnih stranica (iz 1991.)?",
+    "type": "single",
+    "options": ["WorldWideWeb", "Chrome", "Firefox", "Mosaic"],
+    "correct": "WorldWideWeb"
+  },
+  {
+    "question": "Označi preglednike mrežnih stranica:",
+    "type": "multiple",
+    "options": ["WorldWideWeb", "Mosaic", "HyperSurf", "DataWave", "InfoNavigator", "Netscape Navigator", "Chrome", "Firefox"],
+    "correct": ["WorldWideWeb", "Mosaic", "Netscape Navigator", "Chrome", "Firefox"]
+  },
+  {
+    "question": "Koliko verzija HTML-a postoji?",
+    "type": "single",
+    "options": ["3", "4", "5", "6"],
+    "correct": "6"
+  },
+  {
+    "question": "Koliko verzija CSS-a postoji?",
+    "type": "single",
+    "options": ["2", "3", "4", "5"],
+    "correct": "3"
+  },
+  {
+    "question": "Kada je izašla verzija HTML 1.0",
+    "type": "short",
+    "correct": "1991"
+  },
+  {
+    "question": "Kada je izašla verzija HTML 2.0",
+    "type": "short",
+    "correct": "1995"
+  },
+  {
+    "question": "Kada je izašla verzija HTML 3.0",
+    "type": "short",
+    "correct": "1997"
+  },
+  {
+    "question": "Kada je izašla verzija HTML 4.01",
+    "type": "short",
+    "correct": "1999"
+  },
+  {
+    "question": "Kada je izašla verzija XHTML 1.0",
+    "type": "short",
+    "correct": "2000"
+  },
+  {
+    "question": "Kada je izašla verzija HTML 5",
+    "type": "short",
+    "correct": "2014"
+  },
+  {
+    "question": "Kada je izašla verzija CSS 1",
+    "type": "short",
+    "correct": "1996"
+  },
+  {
+    "question": "Kada je izašla verzija CSS 2",
+    "type": "short",
+    "correct": "1998"
+  },
+  {
+    "question": "Kada je izašla verzija CSS 3",
+    "type": "short",
+    "correct": "1999"
+  },
+  {
+    "question": "Označite IT konferencije:",
+    "type": "multiple",
+    "options": ["KulenDayz", "KulenovaSekaDayz", "The Geek Gathering", "DigitalLabin", "Shift", "DataShift Conference", "IT Nexus Conference", "TechFusion Summit"],
+    "correct": ["KulenDayz", "The Geek Gathering", "Shift", "DataShift Conference"]
+  }
+]

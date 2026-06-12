@@ -1,0 +1,100 @@
+[
+    {
+        "question": "Nakon vrijednosti zadnjeg svojstva u CSS-u ne trebamo stavljati znak ;",
+        "type": "truefalse",
+        "correct": "true"
+    },
+    {
+        "question": "Koliko svojstava ima CSS?",
+        "type": "single",
+        "options": ["53","363","122","432"],
+        "correct": "363"
+    },
+    {
+        "question": "Razriješite akronim CSS",
+        "type": "single",
+        "options": ["Cascading Sheet Style","Cross Site Scripting","Cascading Style Sheet","Content Scrambling System"],
+        "correct": "Cascading Style Sheet"
+    },
+    {
+        "question": "Koliko vrsta CSS selektora postoji",
+        "type": "single",
+        "options": ["11","12","10","8"],
+        "correct": "11"
+    },
+    {
+        "question": "Koja je definicija svojstva margin",
+        "type": "single",
+        "options": ["stvara prostor unutar elementa"," stvara prostor između dva elementa","stvara prored između teksta","stvara prostor oko elementa"],
+        "correct": "stvara prostor oko elementa"
+    },
+    {
+        "question": "Izbaci uljeza",
+        "type": "single",
+        "options": ["lh","vw","ex","em","Q","vmax"],
+        "correct": "Q"
+    },
+    {
+        "question": "Koja od sljedećih logičkih svojstava pripadaju svojstvu background",
+        "type": "multiple",
+        "options": ["background-image","background-color","background-size","background-gradient","background-shade"],
+        "correct": ["background-image","background-color","background-size"]
+    },
+    {
+        "question": "Koja je ovo vrsta selektora?",
+        "type": "single",
+        "image": "../img/selektor_identif.png",
+        "options": ["Selektor identifikacije","Univerzalni selektor", "Selektor klase","Selektor elemnta"],
+        "correct": "Selektor identifikacije"
+    },
+    {
+        "question": "CSS je _______ jezik.",
+        "type": "short",
+        "correct": "stilski"
+    },
+    {
+        "question": "Koji znak se koristi za univerzalni selektor u CSS-u?",
+        "type": "single",
+        "options": ["*", ".", "#", ":"],
+        "correct": "*"
+    },
+    {
+        "question": "Koji znak se koristi za selektor klase u CSS-u?",
+        "type": "single",
+        "options": [".", "#", "*", ":"],
+        "correct": "."
+    },
+    {
+        "question": "Koji znak se koristi za selektor identifikacije (ID) u CSS-u?",
+        "type": "single",
+        "options": ["#", ".", "*", "&"],
+        "correct": "#"
+    },
+    {
+        "question": "Koji se zapis koristi za selektor elementa?",
+        "type": "single",
+        "options": ["ul", ".ul", "#ul", "*ul"],
+        "correct": "ul"
+    },
+    {
+        "question": "Kojoj vrsti selektora pripada zapis '.unos'?",
+        "type": "single",
+        "options": ["Selektor klase", "Selektor identifikacije", "Selektor elementa", "Univerzalni selektor"],
+        "correct": "Selektor klase"
+    },
+    {
+        "question": "Koja je ovo vrsta selektora?",
+        "type": "single",
+        "image": "../img/selektor_komb.png",
+        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor klase","Selektor elemnta"],
+        "correct": "Kobinator susjednih rođaka"
+    },
+        {
+        "question": "Koja je ovo vrsta selektora?",
+        "type": "single",
+        "image": "../img/selektor_atr.png",
+        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elemnta"],
+        "correct": "Selektor atributa"
+    }
+
+]
