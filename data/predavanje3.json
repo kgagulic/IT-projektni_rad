@@ -1,11 +1,11 @@
 [
     {
-        "question": "Nakon vrijednosti zadnjeg svojstva u CSS-u ne trebamo stavljati znak ;",
+        "question": "Nakon vrijednosti zadnjeg svojstva u CSS-u moramo staviti znak ; .",
         "type": "truefalse",
-        "correct": "true"
+        "correct": "false"
     },
     {
-        "question": "Koliko svojstava ima CSS?",
+        "question": "Koliko svojstava ima CSS 3?",
         "type": "single",
         "options": ["53","363","122","432"],
         "correct": "363"
@@ -37,7 +37,10 @@
     {
         "question": "Koja od sljedećih logičkih svojstava pripadaju svojstvu background",
         "type": "multiple",
-        "options": ["background-image","background-color","background-size","background-gradient","background-shade"],
+        "options": ["background-image","background-color",
+                    "background-size",
+                    "background-gradient",
+                    "background-shade"],
         "correct": ["background-image","background-color","background-size"]
     },
     {
@@ -89,12 +92,62 @@
         "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor klase","Selektor elemnta"],
         "correct": "Kobinator susjednih rođaka"
     },
-        {
+    {
         "question": "Koja je ovo vrsta selektora?",
         "type": "single",
         "image": "../img/selektor_atr.png",
         "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elemnta"],
         "correct": "Selektor atributa"
+    },
+    {
+        "question": "Koja je ovo vrsta selektora?",
+        "type": "single",
+        "image": "../img/selektor_atr.png",
+        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elemnta"],
+        "correct": "Selektor atributa"
+    },
+    {
+        "question": "Koje je boje tekst 'Ovaj kviz će proći super.'?",
+        "type": "single",
+        "image": "../img/css_pitanja.png",
+        "options": ["Zelena","Plava","Crvena","Crna"],
+        "correct": "Zelena"
+    },
+    {
+        "question": "Koje je boje tekst 'Ne zaboraci pročitati dodatnu literaturu!'?",
+        "type": "single",
+        "image": "../img/css_pitanja.png",
+        "options": ["Zelena","Plava","Crvena","Crna"],
+        "correct": "Crvena"
+    },
+    {
+        "question": "Koje je boje tekst 'CSS je zabavan.'?",
+        "type": "single",
+        "image": "../img/css_pitanja.png",
+        "options": ["Zelena","Plava","Crvena","Crna"],
+        "correct": "Plava"
+    },
+    {
+        "question": "Zašto je tekst 'Ne zaboraci pročitati dodatnu literaturu!' crvene boje?",
+        "type": "single",
+        "image": "../img/css_pitanja.png",
+        "options": ["Zbog selektora elementa p",
+                    "Zbog selektora klase .istaknuto",
+                    "Zbog selektora identifikacije #upozorenje",
+                    "Zbog naslova h1"],
+        "correct": "Zbog selektora identifikacije #upozorenje"
+    },
+    {
+        "question": "Koje je boje tekst 'Ovo je prvi odlomak.'?",
+        "type": "single",
+        "image": "../img/css_pitanja.png",
+        "options": ["Zelena","Plava","Crvena","Crna"],
+        "correct": "Plava"
+    },
+    {
+        "question": "Naslov je crvene boje.",
+        "type": "truefalse",
+        "image": "../img/css_pitanja.png",
+        "correct": "false"
     }
-
 ]

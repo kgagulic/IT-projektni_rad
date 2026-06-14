@@ -1,0 +1,69 @@
+[
+    {
+        "question": "Tko je napisao članak 'Information Management: A Proposal?",
+        "type": "single",
+        "options": ["Tim Berners-Lee","Bill Gates","Steve Jobs","Ted Nelson"],
+        "correct": "Tim Berners-Lee"
+    },
+    {
+        "question": "Koji je najčešći razlog zašto web stranica ne prođe HTML validator?",
+        "type": "single",
+        "options": ["nepravilni atributi",
+                    "nedostaje DOCTYPE specifikacija",
+                    "nedostaju navodnici",
+                    "pogrešno postavljeni elementi"],
+        "correct": "nedostaje DOCTYPE specifikacija"
+    },
+    {
+        "question": "___ od 200 najpoznatijih web stranica nema valjan HTML.",
+        "type": "short",
+        "correct": "199"
+    },
+    {
+        "question": "Razriješi akronim SEO.",
+        "type": "short",
+        "correct": "Search Engine Optimization"
+    },
+    {
+        "question": "WebP je:",
+        "type": "single",
+        "options": ["format za digitalne slike",
+                    "hrvatska domena",
+                    "IT organizacija",
+                    "CSS element"],
+        "correct": "format za digitalne slike"
+    },
+    {
+        "question": "Glavni cilj SEO optimizacije je:",
+        "type": "single",
+        "options": ["povećanje brzine interneta",
+                    "povećanje organskog (besplatnog) prometa na web stranicu",
+                    "dizajn logotipa",
+                    "izrada mobilne aplikacije"],
+        "correct": "povećanje organskog (besplatnog) prometa na web stranicu"
+    },
+    {
+        "question": "Organski promet označava:",
+        "type": "single",
+        "options": ["plaćene oglase na društvenim mrežama",
+                "posjete web stranici bez plaćenih oglasa",
+                "offline marketing",
+                "spam posjete"],
+        "correct": "posjete web stranici bez plaćenih oglasa"
+    },
+    {
+        "question": "SEO utječe na:",
+        "type": "single",
+        "options": ["rangiranje web stranice u rezultatima tražilice",
+                    "brzinu internetske veze",
+                    "hardver računala",
+                    "programski jezik"],
+        "correct": "rangiranje web stranice u rezultatima tražilice"
+    }
+
+
+
+
+
+
+]

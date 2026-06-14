@@ -1,0 +1,149 @@
+[
+    {
+        "question": "Koje je godine razvoj chatbotova postao trend u dizajnu?",
+        "type": "single",
+        "options": ["2025.","2024.","2019.","2000."],
+        "correct": "2019."
+    },
+    {
+        "question": "Koje je godine tamni način rada postao trend u dizajnu?",
+        "type": "single",
+        "options": ["2025.","2024.","2019.","2020."],
+        "correct": "2020."
+    },
+    {
+        "question": "Koje je godine tamni način rada postao trend u dizajnu?",
+        "type": "single",
+        "options": ["2025.","2024.","2019.","2020."],
+        "correct": "2020."
+    },
+    {
+        "question": "Koje je godine korištenje crno-bijele palete boja bilo trend u dizajnu?",
+        "type": "single",
+        "options": ["2025.","2024.","2019.","2020."],
+        "correct": "2019."
+    },
+    {
+        "question": "Koje je godine korištenje umjetne inteligencije postalo trend u dizajnu?",
+        "type": "single",
+        "options": ["2025.","2024.","2023.","2020."],
+        "correct": "2023."
+    },
+    {
+        "question": "Izdvoji trendove u dizajnu za 2024. godinu:",
+        "type": "multiple",
+        "options": ["hiperrealizam",
+                    "razvoj chatbotova",
+                    "animacije",
+                    "stakleni efekt",
+                    "proširena stvarnost",
+                    "neo brutalizam",
+                    "brutalizam"],
+        "correct": ["hiperrealizam", "animacije","stakleni efekt","brutalizam","proširena stvarnost"]                        
+    },
+    {
+        "question": "Izdvoji trendove u dizajnu za 2025. godinu:",
+        "type": "multiple",
+        "options": ["brutalizam",
+                    "mikro-animacije",
+                    "tamni način",
+                    "virtualna stvarnost",
+                    "crno-bijela paleta boja"],
+        "correct": ["brutalizam","mikro-animacije","tamni način","virtualna stvarnost"]                        
+    },
+    {
+        "question": "Koji se od navedenih programa koriste za dizajn web stranica?",
+        "type": "multiple",
+        "options": ["InVision Studio",
+                    "Figma",
+                    "GIMP",
+                    "MockFlow",
+                    "Superbase",
+                    "Marvel",
+                    "Blender",
+                    "Maya"],
+        "correct": ["InVision Studio", "Figma", "GIMP", "MockFlow","Marvel"]
+    },
+    {
+        "question": "Postojeli li hrvatski nazivi za radna mjesta unutar IT područja tj. hrvatski kvalifikacijski okvir za domenu?",
+        "type": "single",
+        "options": ["Da, hrvatski nazivi se koriste",
+                    "Da, ali se hrvatski nazivi ne koriste",
+                    "Ne, ali u izradi je",
+                    "Ne i nije u izradi"],
+        "correct": "Ne, ali u izradi je"
+    },
+    {
+        "question": "Razriješi akronim MVVM",
+        "type": "short",
+        "correct": "Model-View-View-Model"
+    },
+    {
+        "question": "Razriješi akronim MVP",
+        "type": "short",
+        "correct": "Minimum Viable Product"
+    },
+    {
+        "question": "Koji od navedenih programskih jezika se koristi na strani poslužitelja?",
+        "type": "single",
+        "options": ["PHP",
+                "HTML",
+                "CSS",
+                "XML"],
+        "correct": "PHP"
+    },
+    {
+        "question": "Koja od navedenih tehnologija predstavlja sustav za upravljanje relacijskim bazama podataka?",
+        "type": "single",
+        "options": ["Oracle",
+                "HTML",
+                "PHP",
+                "Bootstrap"],
+        "correct": "Oracle"
+    },
+    {
+        "question": "Koji od navedenih su programski jezici za razvoj na strani poslužitelja?",
+        "type": "multiple",
+        "options": ["PHP",
+            "NodeJS",
+            "Python",
+            "Oracle",
+            "MariaDB"],
+        "correct": ["PHP", "NodeJS", "Python"]
+    },
+    {
+        "question": "Što od navedenog su RDBMS?",
+        "type": "multiple",
+        "options": ["Postgres", 
+                    "MariaDB",
+                    "MS SQL Server",
+                    "PHP",
+                    "Java"],
+        "correct": [ "Postgres","MariaDB","MS SQL Server"]
+    },
+    {
+        "question": "Razriješi akronim RDBMS",
+        "type": "short",
+        "correct": "Relational Database Management System"
+    },
+    {
+        "question": "NodeJS se koristi za razvoj aplikacija na strani poslužitelja.",
+        "type": "truefalse",
+        "correct": "true"
+    },
+    {
+        "question": "MariaDB je programski jezik.",
+        "type": "truefalse",
+        "correct": "false"
+    },
+    {
+        "question": "SOLID predstavlja skup principa objektno orijentiranog programiranja.",
+        "type": "truefalse",
+        "correct": "true"
+    },
+    {
+        "question": "Full-Stack Developer radi i frontend i backend razvoj.",
+        "type": "truefalse",
+        "correct": "true"
+    }
+]

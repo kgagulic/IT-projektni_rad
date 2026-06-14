@@ -12,19 +12,40 @@ function shuffle(arr) {
   return [...arr].sort(() => Math.random() - 0.5);
 }
 
-fetch(`../data/predavanje${set}.json`)
-  .then(res => res.json())
+if (set === "kolokvij1") {
+
+  Promise.all([
+    fetch("../data/predavanje1.json").then(r => r.json()),
+    fetch("../data/predavanje2.json").then(r => r.json()),
+    fetch("../data/predavanje3.json").then(r => r.json()),
+    fetch("../data/predavanje4.json").then(r => r.json()),
+    fetch("../data/predavanje5.json").then(r => r.json()),
+    fetch("../data/predavanje7.json").then(r => r.json()),
+    fetch("../data/predavanje8.json").then(r => r.json()),
+    fetch("../data/predavanje9.json").then(r => r.json())
+  ])
   .then(data => {
-    questions = shuffle(data).slice(0, 5);
+    questions = shuffle(data.flat()).slice(0, 10);
     showQuestion();
   });
+
+} else {
+
+  fetch(`../data/predavanje${set}.json`)
+    .then(res => res.json())
+    .then(data => {
+      questions = shuffle(data).slice(0, 5);
+      showQuestion();
+    });
+
+}
 
 function showQuestion() {
   const q = questions[currentIndex];
   const container = document.getElementById("quiz");
 
 container.innerHTML = `
-  <h2>Pitanje ${currentIndex + 1} / 5</h2>
+  <h2>Pitanje ${currentIndex + 1} / ${questions.length}</h2>
   <p>${q.question}</p>
 
   ${q.image ? `<img src="${q.image}" style="max-width:300px; display:block; margin:10px 0;">` : ""}
@@ -61,6 +82,25 @@ else if (q.type === "multiple") {
   `;
 }
 
+else if (q.type === "number") {
+  a.innerHTML = `
+    <input
+      type="text"
+      id="text"
+      inputmode="numeric"
+      maxlength="4"
+      oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+    >
+  `;
+  }
+
+  else if (q.type === "double" || q.type === "doubleOrdered") {
+    a.innerHTML = `
+      <input type="text" id="text1"><br><br>
+      <input type="text" id="text2">
+    `;
+  }
+
   else {
     a.innerHTML = `<input type="text" id="text">`;
   }
@@ -72,9 +112,9 @@ function nextQuestion() {
   const q = questions[currentIndex];
   let answer;
 
-    if (q.type === "single") {
+  if (q.type === "single") {
     answer = document.querySelector("input[name='ans']:checked")?.value || "";
-    }
+  }
 
   else if (q.type === "multiple") {
     answer = [...document.querySelectorAll("input[type='checkbox']:checked")]
@@ -82,7 +122,14 @@ function nextQuestion() {
   }
 
   else if (q.type === "truefalse") {
-  answer = document.querySelector("input[name='tf']:checked")?.value || "";
+    answer = document.querySelector("input[name='tf']:checked")?.value || "";
+  }
+
+  else if (q.type === "double" || q.type === "doubleOrdered") {
+    answer = [
+      document.getElementById("text1").value.trim(),
+      document.getElementById("text2").value.trim()
+    ];
   }
 
   else {
@@ -115,18 +162,33 @@ function normalize(str) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
 }
-
 function check(q, ans) {
   const c = q.correct;
 
+  // DOUBLE ORDERED
+  if (q.type === "doubleOrdered") {
+    return normalize(ans[0]) === normalize(c[0]) &&
+          normalize(ans[1]) === normalize(c[1]);
+}
+
+  // DOUBLE
+  if (q.type === "double") {
+    return JSON.stringify(ans.map(normalize).sort()) ===
+           JSON.stringify(c.map(normalize).sort());
+  }
+
   // MULTIPLE
-  if (Array.isArray(c)) {
+  if (q.type === "multiple") {
     return JSON.stringify(c.map(normalize).sort()) ===
            JSON.stringify(ans.map(normalize).sort());
   }
 
-  // TRUE / FALSE / SINGLE / TEXT
-  return normalize(c) === normalize(ans);
+  // SHORT s više mogućih odgovora
+  if (Array.isArray(c)) {
+    return c.some(el => normalize(el) === normalize(ans));
+  }
+
+  return normalize(c.toString()) === normalize(ans.toString());
 }
 
 function finish() {

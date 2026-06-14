@@ -17,7 +17,8 @@ answers.forEach((a, i) => {
     ? a.userAnswer.join(", ")
     : a.userAnswer;
 
-  const isCorrect = Array.isArray(a.correct)
+const isCorrect =
+  Array.isArray(a.correct) && Array.isArray(a.userAnswer)
     ? JSON.stringify(a.correct.map(x => x.toLowerCase()).sort()) ===
       JSON.stringify(a.userAnswer.map(x => x.toLowerCase()).sort())
     : a.correct.toString().toLowerCase() ===

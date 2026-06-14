@@ -1,0 +1,126 @@
+[    
+    {
+        "question": "Izbaci uljeze",
+        "type": "multiple",
+        "options": ["Notepad","Brackets","Filezilla","NetBeans","PHP Storm", "Atom","Free FTP"],
+        "correct": ["Filezilla","Free FTP"]
+    },
+    {
+        "question": "Definiraj pojam internet.",
+        "type": "single",
+        "options": ["mreža svih mreža",
+                    "skup web stranica pohranjenih na jednom poslužitelju",
+                    "sustav koji služi za pregledavanje mrežnih stranica",
+                    "svjetski sustav međusobno povezanih računalnih mreža",
+                    "sustav koji razmjenjuje informacije"],
+        "correct": ["svjetski sustav međusobno povezanih računalnih mreža"]
+    },
+    {
+        "question": "Koji servisi postoje na internet mreži?",
+        "type": "multiple",
+        "options": ["SSH","FTSP","SFTP","WWW","e-mail", "grupe","TELNET"],
+        "correct": ["SSH","FTSP","SFTP","WWW","e-mail", "grupe","TELNET"]
+    },
+    {
+        "question": "WWW se izvodi putem ______ ili ______ protokola.",
+        "type": "double",
+        "correct": ["HTTP", "HTTPS"]
+    },
+    {
+        "question": "Razriješi akronim URL.",
+        "type": "short",
+        "correct": "Uniform Resource Locator"
+    },
+    {
+        "question": "IPv4 ima mogućih 2^___ adresa, a IPv6 ima mogućih 2^___ adresa.",
+        "type": "doubleOrdered",
+        "correct": ["32", "64"]
+    },
+    {
+        "question": "Svi URL-ovi su URI-ji i svi URI-ji su URL-ovi.",
+        "type": "truefalse",
+        "correct": "false"
+    },
+    {
+        "question": "Svi serveri podržavaju korištenje hrvatskih dijakritičkih znakova i razmaka u imenovanju datoteka i direktorija.",
+        "type": "truefalse",
+        "correct": "false"
+    },
+    {
+        "question": "Operativni sustav Windows nije osjetljiv na mala i velika slova, dok operativni sustav Linux je.",
+        "type": "truefalse",
+        "correct": "true"
+    },
+    {
+        "question": "Ispiši putanju do datoteke 'style2.css'.",
+        "type": "short",
+        "image": "../img/putanja.png",
+        "correct": "OMS/vjezbe_1/prezentacija_html/index/style2.css"
+    },
+    {
+        "question": "Ispiši putanju do datoteke 'index.html'.",
+        "type": "short",
+        "image": "../img/putanja.png",
+        "correct": "OMS/vjezbe_1/HTML_vjezba/index.html"
+    },
+    {
+        "question": "Razriješi akronim HTTPS.",
+        "type": "short",
+        "correct": "HyperText Transfer Protocol Secure"
+    },
+    {
+        "question": "Razriješi akronim URI.",
+        "type": "short",
+        "correct": "Uniform Resource Identifier"
+    },
+    {
+        "question": "________ adresa je adresa od mjesta na kojem se nalazimo.",
+        "type": "short",
+        "correct": "Relativna"
+    },
+    {
+        "question": "________ adresa pokazuje na datoteku bez obzira od kuda ju pozivamo.",
+        "type": "short",
+        "correct": "Apsolutna"
+    },
+    {
+        "question": "Što je relativna adresa?",
+        "type": "single",
+        "options": ["Adresa koja pokazuje lokaciju datoteke u odnosu na trenutno mjesto",
+                    "Potpuna adresa datoteke na internetu",
+                    "Adresa koja uvijek počinje s https://",
+                    "Adresa koja se koristi samo na lokalnom računalu"],
+        "correct": "Adresa koja pokazuje lokaciju datoteke u odnosu na trenutno mjesto"
+    },
+    {
+        "question": "Koja od navedenih adresa je apsolutna?",
+        "type": "single",
+        "options": ["../style.css",
+                    "slike/logo.png",
+                    "https://www.ffos.unios.hr/img/logo_hr.png",
+                    "index.html"],
+        "correct": "https://www.ffos.unios.hr/img/logo_hr.png"
+    },
+    {
+        "question": "Koje od navedenih putanja predstavljaju relativne adrese?",
+        "type": "multiple",
+        "options": ["index.html",
+                    "../style.css",
+                    "slike/logo.png",
+                    "https://www.ffos.unios.hr/img/logo_hr.png"],
+        "correct": ["index.html",
+                    "../style.css",
+                    "slike/logo.png"]
+    },
+    {
+        "question": "Označi dobro imenovane datoteke:",
+        "type": "multiple",
+        "options": ["žirafa.jpg","skola.html","češalj.png","citanje.jpg"],
+        "correct": ["skola.html","citanje.jpg"]
+    }
+
+    
+
+
+
+]

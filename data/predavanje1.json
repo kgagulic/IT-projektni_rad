@@ -1,12 +1,12 @@
 [
   {
     "question": "Kolegij Oblikovanje mrežnih stranica nosi __ ECTS-a za jednopredmetni studij.",
-    "type": "short",
+    "type": "number",
     "correct": "5"
   },
   {
     "question": "Kolegij Oblikovanje mrežnih stranica nosi __ ECTS-a za dvopredmetni studij.",
-    "type": "short",
+    "type": "number",
     "correct": 3
   },
   {
@@ -51,47 +51,47 @@
   },
   {
     "question": "Kada je izašla verzija HTML 1.0",
-    "type": "short",
+    "type": "number",
     "correct": "1991"
   },
   {
     "question": "Kada je izašla verzija HTML 2.0",
-    "type": "short",
+    "type": "number",
     "correct": "1995"
   },
   {
     "question": "Kada je izašla verzija HTML 3.0",
-    "type": "short",
+    "type": "number",
     "correct": "1997"
   },
   {
     "question": "Kada je izašla verzija HTML 4.01",
-    "type": "short",
+    "type": "number",
     "correct": "1999"
   },
   {
     "question": "Kada je izašla verzija XHTML 1.0",
-    "type": "short",
+    "type": "number",
     "correct": "2000"
   },
   {
     "question": "Kada je izašla verzija HTML 5",
-    "type": "short",
+    "type": "number",
     "correct": "2014"
   },
   {
     "question": "Kada je izašla verzija CSS 1",
-    "type": "short",
+    "type": "number",
     "correct": "1996"
   },
   {
     "question": "Kada je izašla verzija CSS 2",
-    "type": "short",
+    "type": "number",
     "correct": "1998"
   },
   {
     "question": "Kada je izašla verzija CSS 3",
-    "type": "short",
+    "type": "number",
     "correct": "1999"
   },
   {

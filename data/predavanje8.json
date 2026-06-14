@@ -1,0 +1,138 @@
+[
+    {
+        "question": "Razriješi akronim RWD",
+        "type": "short",
+        "correct": "Responsive Web Design"
+    },
+    {
+        "question": "Označi RWD radne okoline",
+        "type": "multiple",
+        "options": ["Tailwind", "UI/UX", "Figma","UI kit","Miligram","Bootstrap","Skeleton"],
+        "correct": ["Tailwind","UI kit","Miligram","Bootstrap", "Skeleton"]
+    },
+    {
+        "question": "Koja se RWD radna okolina koristi na vježbama na kolegiju OMS?",
+        "type": "short",
+        "correct": "Foundation"
+    },
+    {
+        "question": "Što prikazuje slika?",
+        "type": "single",
+        "image":"../img/grid.png",
+        "options": ["CSS Media Query (GRID)",
+                    "CSS",
+                    "HTML",
+                    "JavaScript"],
+        "correct": "CSS Media Query (GRID)"
+    },
+    {
+        "question": "RWD samo prilagođava web stranice različitim širinama zaslona.",
+        "type": "truefalse",
+        "correct": "false"
+    },
+    {
+        "question": "Breadcrumbs (mrvice kruha) u web dizajnu predstavljaju:",
+        "type": "single",
+        "options": ["navigacijski put korisnika kroz web stranicu",
+                    "vrstu CSS animacije",
+                    "format slika",
+                    "server logove"],
+        "correct": "navigacijski put korisnika kroz web stranicu"
+    },
+    {
+        "question": "Razriješi akronim CDN",
+        "type": "short",
+        "correct": "Content Delivery Network"
+    },
+    {
+        "question": "Koja je glavna razlika između lokalnih datoteka i CDN-a?",
+        "type": "single",
+        "options": ["Lokalne datoteke se učitavaju s vlastitog servera, a CDN s distribuiranih servera",
+                    "CDN radi samo offline",
+                    "Lokalne datoteke su uvijek brže od CDN-a",
+                    "CDN se koristi samo za baze podataka"],
+        "correct": "Lokalne datoteke se učitavaju s vlastitog servera, a CDN s distribuiranih servera"
+    },
+        {
+        "question": "Koji je glavni problem s rasterskim ikonama u RWD dizajnu?",
+        "type": "single",
+        "options": ["Gube kvalitetu pri povećanju (pikselizacija)",
+                    "Automatski mijenjaju boju",
+                    "Ne mogu se prikazati u preglednicima",
+                    "Uvijek zauzimaju previše memorije"],
+        "correct": "Gube kvalitetu pri povećanju (pikselizacija)"
+    },
+    {
+        "question": "Što se događa s rasterskom slikom pri uvećanju?",
+        "type": "single",
+        "options": ["Postaje zamućena i pikselizirana",
+            "Postaje oštrija",
+            "Automatski se pretvara u vektor",
+            "Nestaje s ekrana"],
+        "correct": "Postaje zamućena i pikselizirana"
+    },
+    {
+        "question": "Koje je osnovno rješenje problema skaliranja ikona u RWD-u?",
+        "type": "single",
+        "options": ["Korištenje vektorskih ikona",
+                    "Smanjenje rezolucije zaslona",
+                    "Brisanje CSS-a",
+                    "Korištenje samo JPEG formata"],
+        "correct": "Korištenje vektorskih ikona"
+    },
+    {
+        "question": "Što od navedenog je platforma za preuzimanje ikona?",
+        "type": "single",
+        "options": ["Flaticon",
+                    "Visual Studio Code",
+                    "MySQL",
+                    "Docker"],
+        "correct": "Flaticon"
+    },
+    {
+        "question": "Koji alat omogućuje izradu vlastitih skupova ikona (icon fontova)?",
+        "type": "single",
+        "options": ["IcoMoon",
+                    "Google Chrome",
+                    "Photoshop Filter",
+                    "Node.js"],
+        "correct": "IcoMoon"
+    },
+    {
+        "question": "Koje od navedenih platformi su servisi za ikone?",
+            "type": "multiple",
+            "options": ["Flaticon",
+                "Icons8",
+                "The Noun Project",
+                "MySQL",
+                "Font Awesome"],
+            "correct": ["Flaticon","Icons8","The Noun Project","Font Awesome"
+            ]
+    },
+    {
+        "question": "Koja platforma je poznata za izradu interaktivnih animacija koje rade u realnom vremenu?",
+        "type": "single",
+        "options": [ "Rive","MySQL","Photoshop Filter","Apache Server"],
+        "correct": "Rive"
+    },
+    {
+        "question": "Koji alat je specijaliziran za izradu jednostavnih UI animacija i motion dizajna?",
+        "type": "single",
+        "options": ["Jitter",
+                    "IcoMoon",
+                    "Fontello",
+                    "Flaticon"],
+        "correct": "Jitter"
+    },
+    {
+        "question": "Koji od navedenih alata pripada motion design alatima?",
+        "type": "multiple",
+        "options": ["Rive",
+                    "Lottiefiles",
+                    "Jitter",
+                    "Font Awesome",
+                    "Motion",
+                    "Flaticon"],
+        "correct": ["Rive","Lottiefiles","Jitter","Motion"]
+    }
+]
