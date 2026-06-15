@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>HTML/CSS Vježba</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+    border: 2px solid #ccc;
+    background: white;
+}
+
+.editori{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Zadatak 1</h1>
+
+<p>
+Rekreiraj izgled sa slike:
+</p>
+
+<img src="../img/voce.png" width="300">
+
+<hr>
+
+<div class="editori">
+
+<div>
+<h3>HTML</h3>
+
+<textarea id="html">
+<h1>Popis voća</h1>
+
+<ol>
+  <li>Banana</li>
+  <li>Avokado</li>
+  <li>Ananas</li>
+  <li>Jabuka</li>
+</ol>
+</textarea>
+
+</div>
+
+<div>
+<h3>CSS</h3>
+
+<textarea id="css">
+</textarea>
+
+</div>
+
+</div>
+
+<button onclick="pokreni()">
+Pokreni
+</button>
+
+<hr>
+
+<h2>Rezultat</h2>
+
+<iframe id="preview"></iframe>
+
+<script>
+
+function pokreni(){
+
+    const html =
+        document.getElementById("html").value;
+
+    const css =
+        document.getElementById("css").value;
+
+    document.getElementById("preview").srcdoc = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>
+                ${css}
+            </style>
+        </head>
+        <body>
+            ${html}
+        </body>
+        </html>
+    `;
+}
+
+pokreni();
+
+</script>
+
+</body>
+</html>
