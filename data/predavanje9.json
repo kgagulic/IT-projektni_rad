@@ -1,0 +1,152 @@
+[
+    {
+        "question": "Tko je stvorio JavaScript 1995. godine?",
+        "type": "single",
+        "options": ["Brendan Eich",
+                    "Tim Berners-Lee",
+                    "Bill Gates",
+                    "Linus Torvalds"],
+        "correct": "Brendan Eich"
+    },
+    {
+        "question": "Kako se JavaScript izvorno zvao 1995. godine?",
+        "type": "single",
+        "options": ["Mocha",
+                    "LiveScript",
+                    "ECMAScript",
+                    "Java"],
+        "correct": "Mocha"
+    },
+    {
+        "question": "Koje godine je stvoren JavaScript i kako se zvao?",
+        "type": "single",
+        "options": ["1994, ECMA",
+                    "1995, Mocha",
+                    "1996, ECMA",
+                    "1997, Mocha"],
+        "correct": "1995, Mocha"
+    },
+    {
+        "question": "Napišite JavaScript kod koji ispisuje poruku 'Hello World!' u konzoli.",
+        "type":"short",
+        "correct": "console.log(\"Hello World!\");"
+    },
+    {
+        "question": "Za višestruko grananje koristi se:",
+        "type": "single",
+        "options": ["if",
+                    "switch",
+                    "if else",
+                    "inline if"],
+        "correct": "switch"
+    },
+    {
+        "question": "Za jednostruko grananje koristi se:",
+        "type": "single",
+        "options": ["if",
+                    "switch",
+                    "if else",
+                    "inline if"],
+        "correct": "if"
+    },
+    {
+        "question":"Kod na slici prikazuje:",
+        "type": "single",
+        "image": "../img/petlja_u_petlji.png",
+        "options": ["nastavak i prekid petlje",
+                    "petlju u petlji",
+                    "petlju",
+                    "beskonačnu petlju"],
+        "correct": "nastavak i prekid petlje"
+    },
+    {
+        "question": "Koji tip podatka predstavlja vrijednost true ili false?",
+        "type": "single",
+        "options": ["Boolean",
+                    "String",
+                    "Number",
+                    "Array"],
+        "correct": "Boolean"
+    },
+    {
+        "question": "Koji tip podatka predstavlja tekstualni niz znakova?",
+        "type": "single",
+        "options": ["String",
+                    "Number",
+                    "Object",
+                    "Boolean"],
+        "correct": "String"
+    },
+    {
+        "question": "Koji je programski jezik spremljen pod ključem 'jezik' u asocijativniNiz?",
+        "type": "short",
+        "image": "../img/js_tipovi_podataka.png",
+        "correct": "Python"
+     },
+     {
+        "question": "Koja je vrsta podatka varijable zaposlen?",
+        "type": "single",
+        "image": "../img/js_tipovi_podataka.png",
+        "options": ["Boolean",
+                    "String",
+                    "Number",
+                    "Array"],
+        "correct": "Boolean"
+    },
+    {
+        "question": "Koja je vrsta podatka varijable ime?",
+        "type": "single",
+        "image": "../img/js_tipovi_podataka.png",
+        "options": ["String",
+                    "Number",
+                    "Boolean",
+                    "Object"],
+        "correct": "String"
+    },
+    {
+        "question": "Odaberite sve varijable tipa Array.",
+        "type": "multiple",
+        "options": ["imena",
+                    "indeksniNiz",
+                    "asocijativniNiz",
+                    "kombinatorniNiz",
+                    "objekt"],
+        "correct": ["imena",
+                    "indeksniNiz",
+                    "asocijativniNiz",
+                    "kombinatorniNiz"
+        ]
+    },
+    {
+        "question": "Kojoj vrsti operatora pripada operator + u JavaScriptu?",
+        "type": "single",
+        "options": ["Aritmetički operator",
+                    "Logički operator",
+                    "Operator usporedbe",
+                    "Operator pridruživanja"],
+        "correct": "Aritmetički operator"
+    },
+    {
+        "question": "Odaberite aritmetičke operatore.",
+        "type": "multiple",
+        "options": [ "+",
+                    "-",
+                    "*",
+                    "&&",
+                    "/"],
+        "correct": ["+", "-","*","/"]
+    },
+    {
+        "question": "Kojoj skupini operatora pripada operator %= ?",
+        "type": "single",
+        "options": ["Operator dodjeljivanja",
+                    "Aritmetički operator",
+                    "Operator usporedbe"],
+        "correct": "Operator dodjeljivanja"
+    },
+    {
+        "question": "Koliko će se puta izvršiti petlja for (var i=0; i<=100; i++)?",
+        "type": "number",
+        "correct": "101"
+    } 
+]

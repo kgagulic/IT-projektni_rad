@@ -1,0 +1,43 @@
+[
+    {
+        "question": "Razriješi akronim SCSS.",
+        "type": "short",
+        "correct": "Sassy Cascading Style Sheets"
+    },
+    {
+        "question": "___ ________  je program koji vam omogućuje generiranje CSS-a iz jedinstvene sintakse predprocesora.",
+        "type":"short",
+        "correct": "CSS predprocesor"
+    },
+    {
+        "question": "Odaberite CSS predprocesore.",
+        "type": "multiple",
+        "options": ["Sass/SCSS",
+                    "LESS",
+                    "Stylus",
+                    "PostCSS",
+                    "PHP"],
+        "correct": ["Sass/SCSS",
+                    "LESS",
+                    "Stylus",
+                    "PostCSS"]
+    }, 
+    {
+        "question": "Kako se zove program koji se koristi za kompajliranje SCSS datoteka, a spomenut je na predavanju?",
+        "type": "single",
+        "options": ["Koala",
+                    "Chrome",
+                    "Bootstrap",
+                    "Visual Studio"],
+        "correct": "Koala"
+    },
+    {
+        "question": "Kako se u SCSS-u naziva mogućnost stavljanja jednog selektora unutar drugog?",
+        "type": "single",
+        "options": [ "Ugnježđivanje",
+            "Nasljeđivanje",
+            "Kompajliranje",
+            "Dodjeljivanje"],
+        "correct": "Ugnježđivanje"
+}   
+]

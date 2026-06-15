@@ -1,0 +1,67 @@
+[
+    {
+        "question": "Razriješi akronim CGI.",
+        "type": "short",
+        "correct": "Common Gateway Interface"
+    },
+    {
+        "question": "Razriješi akronim PHP.",
+        "type": "short",
+        "correct": "Hypertext Preprocessor"
+    },
+    {
+        "question": "Što znači kratica ASP u ASP.NET?",
+        "type": "single",
+        "options": ["Active Server Pages",
+                    "Application Server Program",
+                    "Advanced Server Protocol",
+                    "Active System Process"],
+        "correct": "Active Server Pages"
+    },
+    {
+        "question": "Što znači kratica JSP?",
+        "type": "single",
+        "options": ["Java Server Pages",
+                    "Java Script Pages",
+                    "Java Service Protocol",
+                    "Java Source Pages"],
+        "correct": "Java Server Pages"
+    },
+    {
+        "question": "Django je web server framework za koji programski jezik?",
+        "type": "single",
+        "options": ["Python",
+                    "Java",
+                    "PHP",
+                    "Ruby"],
+        "correct": "Python"
+    },
+    {
+        "question": "Express je web framework za:",
+        "type": "single",
+        "options": ["Node.js",
+                    "Python",
+                    "PHP",
+                    "Java"],
+        "correct": "Node.js"
+    },
+    {
+        "question": "Ruby on Rails temelji se na kojem programskom jeziku?",
+        "type": "single",
+        "options": ["Ruby",
+                    "Java",
+                    "Python",
+                    "PHP"],
+        "correct": "Ruby"
+    },
+    {
+        "question": "Express je web framework za Node.js.",
+        "type": "truefalse",
+        "correct": "true"
+    },
+    {
+        "question": "Django je web framework za PHP.",
+        "type": "truefalse",
+        "correct": "false"
+    }
+]

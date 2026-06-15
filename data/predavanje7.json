@@ -16,7 +16,7 @@
     },
     {
         "question": "___ od 200 najpoznatijih web stranica nema valjan HTML.",
-        "type": "short",
+        "type": "number",
         "correct": "199"
     },
     {

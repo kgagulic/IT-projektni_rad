@@ -19,17 +19,32 @@ if (set === "kolokvij1") {
     fetch("../data/predavanje2.json").then(r => r.json()),
     fetch("../data/predavanje3.json").then(r => r.json()),
     fetch("../data/predavanje4.json").then(r => r.json()),
-    fetch("../data/predavanje5.json").then(r => r.json()),
-    fetch("../data/predavanje7.json").then(r => r.json()),
-    fetch("../data/predavanje8.json").then(r => r.json()),
-    fetch("../data/predavanje9.json").then(r => r.json())
+    fetch("../data/predavanje5.json").then(r => r.json())
   ])
   .then(data => {
     questions = shuffle(data.flat()).slice(0, 10);
     showQuestion();
   });
 
-} else {
+}
+
+else if (set === "kolokvij2") {
+
+  Promise.all([
+    fetch("../data/predavanje7.json").then(r => r.json()),
+    fetch("../data/predavanje8.json").then(r => r.json()),
+    fetch("../data/predavanje9.json").then(r => r.json()),
+    fetch("../data/predavanje10.json").then(r => r.json()),
+    fetch("../data/predavanje11.json").then(r => r.json())
+  ])
+  .then(data => {
+    questions = shuffle(data.flat()).slice(0, 10);
+    showQuestion();
+  });
+
+}
+
+else {
 
   fetch(`../data/predavanje${set}.json`)
     .then(res => res.json())
