@@ -3,25 +3,27 @@
     {
       "title": "Pitanje 1/3",
 
-      "text": "Dopuni HTML dokument. Nedostaje jedan element.",
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
 
-      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Moja stranica</title>\n</head>\n\n\n</html>",
+      "image": "../img/voce.png",
 
-      "requiredTag": "body",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
 
-      "showPreview": false
+      "requiredTags": ["h2", "ol", "li"],
+
+      "showPreview": true
     },
 
     {
       "title": "Pitanje 2/3",
 
-      "text": "Prepiši tekst sa slike koristeći odgovarajući element.",
+      "text": "Prepiši sadržaj sa slike koristeći odgovarajući element.",
 
-      "image": "../img/tekst.png",
+      "image": "../img/pre_tag.png",
 
       "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
 
-      "requiredTag": "p",
+      "requiredTag": "pre",
 
       "showPreview": true
     },
@@ -31,11 +33,11 @@
 
       "text": "Prepiši sadržaj sa slike koristeći odgovarajući element.",
 
-      "image": "../img/naslov.png",
+      "image": "../img/h_naslovi.png",
 
       "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
 
-      "requiredTag": "h1",
+      "requiredTags": ["h1", "h2", "h3", "h4"],
 
       "showPreview": true
     }
