@@ -1,5 +1,3 @@
-console.log("KVIZ JS LOADED");
-
 const params = new URLSearchParams(window.location.search);
 const set = params.get("set") || 1;
 
