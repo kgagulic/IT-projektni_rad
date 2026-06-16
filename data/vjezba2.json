@@ -1,0 +1,43 @@
+{
+  "questions": [
+    {
+      "title": "Pitanje 1/3",
+
+      "text": "Dopuni HTML dokument. Nedostaje jedan element.",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Moja stranica</title>\n</head>\n\n\n</html>",
+
+      "requiredTag": "body",
+
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 2/3",
+
+      "text": "Prepiši tekst sa slike koristeći odgovarajući element.",
+
+      "image": "../img/tekst.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTag": "p",
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 3/3",
+
+      "text": "Prepiši sadržaj sa slike koristeći odgovarajući element.",
+
+      "image": "../img/naslov.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTag": "h1",
+
+      "showPreview": true
+    }
+  ]
+}

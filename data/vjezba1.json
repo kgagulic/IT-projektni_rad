@@ -1,11 +1,37 @@
 {
-  "title": "Popis voća",
+  "questions": [
+    {
+       "title": "Pitanje 1/3",
 
-  "description": "Rekreiraj izgled sa slike koristeći HTML.",
+        "text": "Dopuni HTML dokument. Nedostaje jedan element.",
 
-  "image": "../img/voce.png",
+        "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Moja stranica</title>\n</head>\n\n\n</html>",
 
-  "starterHTML": "",
+        "requiredTag": "body"
+    },
 
-  "starterCSS": ""
+    {
+      "title": "Pitanje 2/3",
+
+      "text": "Prepiši tekst sa slike koristeći odgovarajući element.",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+
+      "image": "../img/tekst.png",
+
+      "requiredTag": "p"
+    },
+
+    {
+      "title": "Pitanje 3/3",
+
+      "text": "Prepiši sadržaj sa slike koristeći odgovarajući element.",
+      
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+
+      "image": "../img/naslov.png",
+
+      "requiredTag": "h1"
+    }
+  ]
 }
