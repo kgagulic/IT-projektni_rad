@@ -114,6 +114,15 @@ function provjeri() {
 
 
             // 1. mora postojati i opening i closing tag
+         if (tag === "hr" || tag === "br") {
+
+                if (!openTag.test(unos)) {
+                    nedostaje.push(tag);
+                }
+
+                return;
+            }
+
             if (!openTag.test(unos) || !closeTag.test(unos)) {
                 nedostaje.push(tag);
                 return;
@@ -139,13 +148,27 @@ function provjeri() {
 
 
 
-            // 4. LI mora biti unutar OL
-            if (tag === "li") {
+            // 4. LI mora biti unutar OL i UL
+          if (tag === "li") {
 
-                const olCheck = /<ol[\s\S]*?<li[\s\S]*?<\/li>[\s\S]*?<\/ol>/i;
+                const listCheck =
+                    /<(ol|ul)[\s\S]*?<li[\s\S]*?<\/li>[\s\S]*?<\/(ol|ul)>/i;
 
-                if (!olCheck.test(unos)) {
+            if (!listCheck.test(unos)) {
                     krivo.push("li");
+                }
+            }
+
+            if (tag === "figcaption") {
+
+                const doc = new DOMParser().parseFromString(unos, "text/html");
+
+                const figure = doc.querySelector("figure");
+                const figcaption = doc.querySelector("figcaption");
+                const img = figure ? figure.querySelector("img") : null;
+
+                if (!figure || !figcaption || !img) {
+                    krivo.push("figure");
                 }
             }
 

@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "title": "Pitanje 1/3",
+      "title": "Pitanje 1/7",
 
       "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
 
@@ -15,7 +15,7 @@
     },
 
     {
-      "title": "Pitanje 2/3",
+      "title": "Pitanje 2/7",
 
       "text": "Prepiši sadržaj sa slike koristeći odgovarajući element.",
 
@@ -29,7 +29,7 @@
     },
 
     {
-      "title": "Pitanje 3/3",
+      "title": "Pitanje 3/7",
 
       "text": "Prepiši sadržaj sa slike koristeći odgovarajući element.",
 
@@ -38,6 +38,62 @@
       "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
 
       "requiredTags": ["h1", "h2", "h3", "h4"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 4/7",
+
+      "text": "Prepiši sadržaj sa slike koristeći odgovarajući element.",
+
+      "image": "../img/linkovi_hr.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["a", "hr"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 5/7",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/bruce_wayne.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["abbr", "address", "blockquote"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 6/7",
+
+      "text": "Dodaj elemente koji nedostaju kako bi slika imala opis.",
+
+      "image": "../img/figure_figcaption.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n<img src=\"elephant.jpg\" />\n</body>\n</html>",
+
+      "requiredTags": ["figure", "figcaption"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 7/7",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/ul_br.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["ul", "li", "br"],
 
       "showPreview": true
     }
