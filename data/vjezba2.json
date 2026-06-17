@@ -91,6 +91,8 @@
 
     "image": "../img/prvi_css.png",
 
+    "largeImage": true,
+    
     "showCSS": true,
 
     "showPreview": true,
@@ -113,7 +115,6 @@
     "footer"
   ]
 }
-
   
   ]
 }

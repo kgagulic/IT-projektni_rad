@@ -53,12 +53,11 @@ function prikaziPitanje() {
 
         <p>${p.text}</p>
 
-        ${p.image ? `
-            <img
-                src="${p.image}"
-                style="max-width:400px;"
-                class="img-fluid mb-3">
-        ` : ""}
+${p.image ? `
+    <img
+        src="${p.image}"
+        class="mb-3 ${p.largeImage ? 'large-image' : 'normal-image'}">
+` : ""}
 
         ${p.showCSS ? `
 
