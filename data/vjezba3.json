@@ -1,0 +1,87 @@
+{
+  "questions": [
+    {
+      "title": "Pitanje 1/6",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/strong_small.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["strong", "small"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 2/6",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/s_b.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["s", "b"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 3/6",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/kbd_i_code.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["kbd", "i", "code"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 4/6",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/sub_sup_em.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["sub", "sup", "em"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 5/6",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/mark_samp.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["mark", "samp"],
+
+      "showPreview": true
+    },
+
+    {
+      "title": "Pitanje 6/6",
+
+      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+      "image": "../img/ruby_rt_rp.png",
+
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+      "requiredTags": ["ruby", "rt", "rp"],
+
+      "showPreview": true
+    }
+  ]
+}
