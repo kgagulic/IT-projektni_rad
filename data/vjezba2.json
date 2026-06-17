@@ -89,6 +89,8 @@
 
     "text": "Stiliziraj elemente u HTML predlošku pomoću CSS-a.",
 
+    "image": "../img/prvi_css.png",
+
     "showCSS": true,
 
     "showPreview": true,
