@@ -9,7 +9,7 @@
 
       "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
 
-      "requiredTags": ["h2", "ol", "li"],
+      "requiredTags": ["h2", "ol", "li", "ul"],
 
       "showPreview": true
     },
@@ -84,18 +84,34 @@
       "showPreview": true
     },
 
-    {
-      "title": "Pitanje 7/7",
+   {
+    "title": "Pitanje 7/7",
 
-      "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+    "text": "Stiliziraj elemente u HTML predlošku pomoću CSS-a.",
 
-      "image": "../img/ul_br.png",
+    "showCSS": true,
 
-      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+    "showPreview": true,
 
-      "requiredTags": ["ul", "li", "br"],
+    "starterCode": "<body>\n<header>\n    Zaglavlje\n</header>\n\n<div class=\"prvi\">\n    <p>Lorem ipsum dolor sit amet,\n       <br> consectetur adipiscing elit, sed do eiusmod tempor\n       <br> incididunt ut labore et dolore magna aliqua.\n    </p>\n</div>\n\n<footer>\n    <small>Podnožje</small>\n</footer>\n</body>",
 
-      "showPreview": true
-    }
+    "starterCSS": "",
+
+    "requiredTags": [
+    "header",
+    "div",
+    "p",
+    "footer",
+    "small"
+  ],
+
+    "requiredCSS": [
+    "header",
+    ".prvi",
+    "footer"
+  ]
+}
+
+  
   ]
 }

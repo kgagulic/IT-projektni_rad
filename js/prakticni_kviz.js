@@ -2,13 +2,27 @@ const params = new URLSearchParams(window.location.search);
 const set = params.get("set") || 1;
 
 let pitanja = [];
-let trenutno = 0;
+
+// 🔥 učitava zadnje pitanje ili 0
+let trenutno =
+Number(localStorage.getItem("trenutnoPitanje")) || 0;
+
+
+
+
 
 fetch(`../data/vjezba${set}.json`)
     .then(res => res.json())
     .then(data => {
 
         pitanja = data.questions;
+
+        // ako netko dođe preko zadnjeg indexa
+        if (trenutno >= pitanja.length) {
+            trenutno = 0;
+            localStorage.setItem("trenutnoPitanje", 0);
+        }
+
         prikaziPitanje();
 
     })
@@ -29,7 +43,6 @@ fetch(`../data/vjezba${set}.json`)
 
 
 
-
 function prikaziPitanje() {
 
     const p = pitanja[trenutno];
@@ -37,23 +50,78 @@ function prikaziPitanje() {
     document.getElementById("quiz").innerHTML = `
 
         <h2>${p.title}</h2>
+
         <p>${p.text}</p>
 
         ${p.image ? `
-            <img src="${p.image}" style="max-width:400px;" class="img-fluid mb-3">
+            <img
+                src="${p.image}"
+                style="max-width:400px;"
+                class="img-fluid mb-3">
         ` : ""}
 
-        <textarea id="odgovor" class="form-control" rows="15">${p.starterCode || ""}</textarea>
+        ${p.showCSS ? `
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h5>HTML</h5>
+
+                <textarea
+                    id="odgovor"
+                    class="form-control"
+                    rows="15"
+                >${p.starterCode || ""}</textarea>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <h5>CSS</h5>
+
+                <textarea
+                    id="css"
+                    class="form-control"
+                    rows="15"
+                >${p.starterCSS || ""}</textarea>
+
+            </div>
+
+        </div>
+
+        ` : `
+
+        <textarea
+            id="odgovor"
+            class="form-control"
+            rows="15"
+        >${p.starterCode || ""}</textarea>
+
+        `}
 
         <br>
 
-        <button class="btn btn-primary" onclick="provjeri()">Provjeri</button>
+        <button
+            class="btn btn-primary"
+            onclick="provjeri()">
+            Provjeri
+        </button>
+
+        <button
+            class="btn btn-secondary ms-2"
+            onclick="sljedece()">
+            Preskoči
+        </button>
 
         <div id="poruka" class="mt-3"></div>
 
-        <div id="previewContainer"></div>
+        <div id="previewContainer" class="mt-4"></div>
+
     `;
 }
+
+
 
 
 
@@ -65,6 +133,8 @@ function provjeri() {
 
     const p = pitanja[trenutno];
     const unos = document.getElementById("odgovor").value;
+    const css =
+    document.getElementById("css")?.value || "";
 
     let tocno = false;
 
@@ -80,8 +150,68 @@ function provjeri() {
 
 
 
+
+
     // =====================================================
-    // VIŠE ELEMENATA (requiredTags)
+    // PREVIEW - UVIJEK
+    // =====================================================
+
+    const preview = document.getElementById("previewContainer");
+
+    if (p.showPreview) {
+
+       const previewHTML = `
+<style>${css}</style>
+${unos}
+`;
+
+preview.innerHTML = `
+    <h5 class="mt-4">
+        Pregled rezultata
+    </h5>
+
+    <iframe
+        style="width:100%;height:250px;border:1px solid #ccc;background:white;"
+        srcdoc='${previewHTML.replace(/'/g, "&apos;")}'
+    ></iframe>
+`;
+
+    } else {
+        preview.innerHTML = "";
+    }
+
+
+
+if (p.requiredCSS) {
+
+    const cssLower = css.toLowerCase();
+
+    let nedostajeCSS = [];
+
+    p.requiredCSS.forEach(selector => {
+
+        if (!cssLower.includes(selector.toLowerCase())) {
+            nedostajeCSS.push(selector);
+        }
+
+    });
+
+    if (nedostajeCSS.length > 0) {
+
+        poruka(
+            "danger",
+            "❌ Nedostaje dio CSS-a."
+        );
+
+        return;
+    }
+}
+
+
+
+
+    // =====================================================
+    // VIŠE ELEMENATA
     // =====================================================
 
     if (p.requiredTags) {
@@ -89,19 +219,26 @@ function provjeri() {
         let nedostaje = [];
         let prazno = [];
         let krivo = [];
+        let neispravno = [];
 
 
 
-        // BODY granice (RAW STRING)
         const bodyStart = unos.toLowerCase().indexOf("<body");
         const bodyEnd = unos.toLowerCase().indexOf("</body>");
 
-        if (bodyStart === -1 || bodyEnd === -1 || bodyEnd < bodyStart) {
+        if (
+            bodyStart === -1 ||
+            bodyEnd === -1 ||
+            bodyEnd < bodyStart
+        ) {
             poruka("danger", "❌ Nedostaje ili je neispravan body.");
             return;
         }
 
         const bodyContent = unos.substring(bodyStart, bodyEnd + 7);
+
+
+
 
 
 
@@ -113,8 +250,8 @@ function provjeri() {
 
 
 
-            // 1. mora postojati i opening i closing tag
-         if (tag === "hr" || tag === "br") {
+            // HR i BR
+            if (tag === "hr" || tag === "br") {
 
                 if (!openTag.test(unos)) {
                     nedostaje.push(tag);
@@ -123,6 +260,12 @@ function provjeri() {
                 return;
             }
 
+
+
+
+
+
+
             if (!openTag.test(unos) || !closeTag.test(unos)) {
                 nedostaje.push(tag);
                 return;
@@ -130,7 +273,10 @@ function provjeri() {
 
 
 
-            // 2. mora biti unutar body STRINGA
+
+
+
+
             if (!openTag.test(bodyContent) || !closeTag.test(bodyContent)) {
                 krivo.push(tag);
                 return;
@@ -138,7 +284,10 @@ function provjeri() {
 
 
 
-            // 3. provjera praznog sadržaja (DOM safe)
+
+
+
+
             const doc = new DOMParser().parseFromString(unos, "text/html");
             const el = doc.querySelector(tag);
 
@@ -148,17 +297,28 @@ function provjeri() {
 
 
 
-            // 4. LI mora biti unutar OL i UL
-          if (tag === "li") {
+
+
+
+
+            // LI mora u OL ili UL
+            if (tag === "li") {
 
                 const listCheck =
                     /<(ol|ul)[\s\S]*?<li[\s\S]*?<\/li>[\s\S]*?<\/(ol|ul)>/i;
 
-            if (!listCheck.test(unos)) {
+                if (!listCheck.test(unos)) {
                     krivo.push("li");
                 }
             }
 
+
+
+
+
+
+
+            // FIGURE
             if (tag === "figcaption") {
 
                 const doc = new DOMParser().parseFromString(unos, "text/html");
@@ -172,13 +332,38 @@ function provjeri() {
                 }
             }
 
+
+
+
+
+
+
+            // A mora imati href
+            if (tag === "a") {
+
+                const linkCheck =
+                    /<a\s+[^>]*href\s*=\s*["'][^"']+["'][^>]*>[\s\S]*?<\/a>/i;
+
+                if (!linkCheck.test(bodyContent)) {
+                    neispravno.push("a");
+                }
+            }
+
         });
 
 
 
 
+
+
+
         if (nedostaje.length > 0) {
-            poruka("danger", "❌ Netočno. Provjeri koristiš li sve potrebne elemente.");
+            poruka("danger", "❌ Netočno. Nedostaju elementi.");
+            return;
+        }
+
+        if (neispravno.length > 0) {
+            poruka("danger", "❌ Element postoji, ali nije ispravno napisan.");
             return;
         }
 
@@ -207,7 +392,8 @@ function provjeri() {
 
     else if (p.requiredTag === "body") {
 
-        const regex = /<html[\s\S]*?<head[\s\S]*?<\/head>[\s\S]*?<body[\s\S]*>[\s\S]*<\/body>[\s\S]*<\/html>/i;
+        const regex =
+            /<html[\s\S]*?<head[\s\S]*?<\/head>[\s\S]*?<body[\s\S]*>[\s\S]*<\/body>[\s\S]*<\/html>/i;
 
         if (regex.test(unos)) {
             tocno = true;
@@ -235,9 +421,6 @@ function provjeri() {
 
         const tag = p.requiredTag;
 
-
-
-        // mora postojati ispravan closing tag
         const closing = new RegExp(`<${tag}\\b[\\s\\S]*?<\\/${tag}>`, "i");
 
         if (!closing.test(unos)) {
@@ -245,9 +428,6 @@ function provjeri() {
             return;
         }
 
-
-
-        // mora biti unutar body (RAW STRING provjera)
         const bodyStart = unos.toLowerCase().indexOf("<body");
         const bodyEnd = unos.toLowerCase().indexOf("</body>");
 
@@ -263,9 +443,6 @@ function provjeri() {
             return;
         }
 
-
-
-        // prazno?
         const doc = new DOMParser().parseFromString(unos, "text/html");
         const el = doc.querySelector(tag);
 
@@ -274,36 +451,7 @@ function provjeri() {
             return;
         }
 
-
-
         tocno = true;
-    }
-
-
-
-
-
-
-
-    // =====================================================
-    // PREVIEW
-    // =====================================================
-
-    const preview = document.getElementById("previewContainer");
-
-    if (p.showPreview) {
-
-        preview.innerHTML = `
-            <h5 class="mt-4">Pregled rezultata</h5>
-
-            <iframe
-                style="width:100%;height:250px;border:1px solid #ccc;background:white;"
-                srcdoc="${unos.replace(/"/g,'&quot;')}">
-            </iframe>
-        `;
-
-    } else {
-        preview.innerHTML = "";
     }
 
 
@@ -319,6 +467,7 @@ function provjeri() {
     if (tocno) {
 
         document.getElementById("poruka").innerHTML = `
+
             <div class="alert alert-success">
                 ✔ Točan odgovor!
             </div>
@@ -326,12 +475,16 @@ function provjeri() {
             <button class="btn btn-success" onclick="sljedece()">
                 Dalje
             </button>
+
         `;
 
     } else {
 
         poruka("danger", "❌ Netočno.");
     }
+
+
+    
 }
 
 
@@ -344,21 +497,30 @@ function sljedece() {
 
     trenutno++;
 
+    localStorage.setItem("trenutnoPitanje", trenutno);
+
     if (trenutno < pitanja.length) {
         prikaziPitanje();
     }
 
     else {
 
-        document.getElementById("quiz").innerHTML = `
-            <div class="alert alert-success text-center">
-                <h2>Bravo!</h2>
-                <p>Uspješno si riješio/la sve zadatke.</p>
+        localStorage.removeItem("trenutnoPitanje");
 
-                <a href="../zadaci/izbor_vjezbe.html" class="btn btn-primary">
-                    Povratak na odabir vježbi
-                </a>
-            </div>
+        document.getElementById("quiz").innerHTML = `
+
+        <div class="alert alert-success text-center">
+
+            <h2>Bravo!</h2>
+
+            <p>Uspješno si riješio/la sve zadatke.</p>
+
+            <a href="../zadaci/izbor_vjezbe.html" class="btn btn-primary">
+                Povratak na odabir vježbi
+            </a>
+
+        </div>
+
         `;
     }
 }

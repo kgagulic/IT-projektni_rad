@@ -9,7 +9,7 @@
 
       "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
 
-      "requiredTags": ["strong", "small"],
+      "requiredTags": ["strong", "small", "hr"],
 
       "showPreview": true
     },
