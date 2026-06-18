@@ -1,0 +1,59 @@
+{
+  "questions": [
+
+   {
+    "title": "Pitanje 1/2",
+
+    "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+    "image": "../img/tablica.png",
+
+    "showCSS": true,
+
+    "showPreview": true,
+
+   "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+    "starterCSS": "",
+
+    "requiredTags": [
+    "table",
+    "caption",
+    "tr",
+    "th",
+    "td",
+    "tbody",
+    "tfoot"
+  ] 
+},
+
+
+   {
+    "title": "Pitanje 2/2",
+
+    "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
+
+    "image": "../img/tablica2.png",
+
+    "showCSS": true,
+
+    "showPreview": true,
+
+   "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n\n</body>\n</html>",
+
+    "starterCSS": "",
+
+    "requiredTags": [
+    "table",
+    "caption",
+    "tr",
+    "th",
+    "td",
+    "tbody",
+    "colgroup"
+  ] 
+}
+
+
+  ]
+}

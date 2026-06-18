@@ -1,15 +1,4 @@
-header{
-    min-height: 50px;
-    margin: 0 0 0 .5rem;
-    border: 4px dotted cadetblue;
+tr,th,td {
+    border: solid black 2px;
+    
 }
-
-.prvi{
-    background-color: rgb(223, 171, 223);
-    padding-right: 15px;
-}
-
-footer{
-    outline: dashed red;
-}
-
