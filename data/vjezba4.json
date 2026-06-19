@@ -2,7 +2,7 @@
   "questions": [
 
    {
-    "title": "Pitanje 1/2",
+    "title": "Pitanje 1/6",
 
     "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
 
@@ -29,7 +29,7 @@
 
 
    {
-    "title": "Pitanje 2/2",
+    "title": "Pitanje 2/6",
 
     "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao što je na slici.",
 
@@ -52,6 +52,94 @@
     "tbody",
     "colgroup"
   ] 
+},
+
+{
+  "title": "Pitanje 3/6",
+
+  "text": "Koristeći CSS Grid rekreiraj raspored sa slike.",
+
+  "image": "../img/grid1.png",
+
+  "showCSS": true,
+
+  "showPreview": true,
+
+  "starterCode": "<section>\n<div class=\"podrucje zaglavlje\">Zaglavlje</div>\n<div class=\"podrucje lijevo\">Lijevo</div>\n<div class=\"podrucje tijelo\">Tijelo</div>\n<div class=\"podrucje desno\">Desno</div>\n<div class=\"podrucje podnozje\">Podnožje</div>\n</section>",
+
+  "starterCSS": "",
+
+  "requiredCSS": [
+    "display",
+    "grid-template-areas",
+    "grid-area"
+  ]
+},
+
+{
+  "title": "Pitanje 4/6",
+
+  "text": "Koristeći CSS Grid rekreiraj raspored sa slike.",
+
+  "image": "../img/grid2.png",
+
+  "showCSS": true,
+
+  "showPreview": true,
+
+  "starterCode": "<section>\n<div class=\"podrucje header\">Header</div>\n<div class=\"podrucje nav\">Navigacija</div>\n<div class=\"podrucje s1\">Sadržaj 1</div>\n<div class=\"podrucje s2\">Sadržaj 2</div>\n<div class=\"podrucje s3\">Sadržaj 3</div>\n<div class=\"podrucje footer\">Footer</div>\n</section>",
+
+  "starterCSS": "",
+
+  "requiredCSS": [
+    "display",
+    "grid-template-areas",
+    "grid-area"
+  ]
+},
+
+{
+  "title": "Pitanje 5/6",
+
+  "text": "Koristeći CSS Grid rekreiraj raspored sa slike.",
+
+  "image": "../img/grid3.png",
+
+  "showCSS": true,
+
+  "showPreview": true,
+
+  "starterCode": "<section>\n<div class=\"podrucje header\">Header</div>\n<div class=\"podrucje lijevo\">Lijevo</div>\n<div class=\"podrucje s1\">Sadržaj 1</div>\n<div class=\"podrucje s2\">Sadržaj 2</div>\n<div class=\"podrucje s3\">Sadržaj 3</div>\n<div class=\"podrucje desno\">Desno</div>\n<div class=\"podrucje footer\">Footer</div>\n</section>",
+
+  "starterCSS": "",
+
+  "requiredCSS": [
+    "display",
+    "grid-template-areas",
+    "grid-area"
+  ]
+},
+
+{
+  "title": "Pitanje 6/6",
+
+  "text": "Koristeći CSS Grid rekreiraj raspored sa slike.",
+
+  "image": "../img/grid4.png",
+
+  "showCSS": true,
+
+  "showPreview": true,
+
+  "starterCode": "<section>\n<div class=\"podrucje zaglavlje\">Zaglavlje</div>\n<div class=\"podrucje menu\">Menu</div>\n<div class=\"podrucje k1\">Kartica 1</div>\n<div class=\"podrucje k2\">Kartica 2</div>\n<div class=\"podrucje k3\">Kartica 3</div>\n<div class=\"podrucje k4\">Kartica 4</div>\n<div class=\"podrucje k5\">Kartica 5</div>\n<div class=\"podrucje k6\">Kartica 6</div>\n<div class=\"podrucje podnozje\">Podnožje</div>\n</section>",
+
+  "starterCSS": "",
+
+  "requiredCSS": [
+    "display",
+    "grid-template-areas",
+    "grid-area"
+  ]
 }
 
 
