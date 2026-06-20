@@ -1,0 +1,88 @@
+{
+"questions": [
+{
+  "title": "Pitanje 1/4",
+
+  "text": "Koristeći odgovarajuće elemente, izradi obrazac kao na slici.",
+
+  "image": "../img/anketa1.png",
+
+  "largeImage": true,
+
+  "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+
+  "requiredTags": [
+    "form",
+    "fieldset",
+    "label",
+    "select",
+    "option",
+    "button",
+    "progress"
+  ],
+
+  "showPreview": true
+},
+
+{
+  "title": "Pitanje 2/4",
+
+  "text": "Koristeći odgovarajuće elemente, izradi obrazac kao na slici.",
+
+  "image": "../img/anketa2.png",
+
+  "largeImage": true,
+
+  "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+
+  "requiredTags": [
+    "form",
+    "fieldset",
+    "input",
+    "datalist",
+    "progress"
+  ],
+
+  "showPreview": true
+},
+
+{
+  "title": "Pitanje 3/4",
+
+  "text": "Koristeći odgovarajuće elemente, izradi obrazac kao na slici.",
+
+  "image": "../img/anketa3.png",
+
+  "largeImage": true,
+
+  "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+
+  "requiredTags": [
+    "form",
+    "fieldset",
+    "optgroup",
+    "textarea",
+    "progress"
+  ],
+
+  "showPreview": true
+},
+
+{
+  "title": "Pitanje 4/4",
+
+  "text": "Koristeći odgovarajuće elemente, prikaži sadržaj kao na slici.",
+
+  "image": "../img/details_summary.png",
+
+  "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+
+  "requiredTags": [
+    "details",
+    "summary"
+  ],
+
+  "showPreview": true
+}
+ ]
+    }

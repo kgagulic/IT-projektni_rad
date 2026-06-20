@@ -121,13 +121,6 @@ ${p.image ? `
 }
 
 
-
-
-
-
-
-
-
 function provjeri() {
 
     const p = pitanja[trenutno];
@@ -145,8 +138,26 @@ function provjeri() {
         `;
     };
 
+if (p.oneOfTags) {
 
+    const found = p.oneOfTags.some(tag => {
 
+        const regex = new RegExp(`<${tag}\\b`, "i");
+
+        return regex.test(unos);
+
+    });
+
+    if (!found) {
+
+        poruka(
+            "warning",
+            `⚠ Potrebno je koristiti jedan od elemenata: ${p.oneOfTags.join(", ")}.`
+        );
+
+        return;
+    }
+}
 
 
 
@@ -234,8 +245,26 @@ if (p.requiredCSS) {
             return;
         }
 
-        const bodyContent = unos.substring(bodyStart, bodyEnd + 7);
+const bodyContent = unos.substring(bodyStart, bodyEnd + 7);
 
+const doc = new DOMParser().parseFromString(unos, "text/html");
+
+if (p.requiredInputType) {
+
+    const input = doc.querySelector(
+        `input[type="${p.requiredInputType}"]`
+    );
+
+    if (!input) {
+
+        poruka(
+            "warning",
+            `⚠ Nedostaje input type="${p.requiredInputType}".`
+        );
+
+        return;
+    }
+}
 
 
 
@@ -286,10 +315,7 @@ if (p.requiredCSS) {
 
 
 
-
-            const doc = new DOMParser().parseFromString(unos, "text/html");
             const el = doc.querySelector(tag);
-
             if (el && el.textContent.trim() === "") {
                 prazno.push(tag);
             }
@@ -320,7 +346,6 @@ if (p.requiredCSS) {
             // FIGURE
             if (tag === "figcaption") {
 
-                const doc = new DOMParser().parseFromString(unos, "text/html");
 
                 const figure = doc.querySelector("figure");
                 const figcaption = doc.querySelector("figcaption");
