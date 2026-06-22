@@ -1,0 +1,158 @@
+{
+  "questions": [
+
+    {
+      "title": "Pitanje 1/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation1.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "row",
+        "small-2",
+        "small-10",
+        "small-3",
+        "small-9",
+        "columns"
+      ],
+      "largeImage": true,
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 2/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation2.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "row",
+        "small-8",
+        "small-4",
+        "columns"
+      ],
+      "largeImage": true,
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 3/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation3.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "icon-bar",
+        "five-up",
+        "item"
+      ],
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 4/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation4.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "pagination",
+        "arrow",
+        "current",
+        "unavailable"
+      ],
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 5/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation5.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "panel",
+        "callout",
+        "radius"
+      ],
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 6/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation6.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "button-group",
+        "round",
+        "button"
+      ],
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 7/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation7.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "breadcrumbs",
+        "unavailable",
+        "current"
+      ],
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 8/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation8.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "progress",
+        "meter"
+      ],
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 9/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation9.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredTags": [
+        "table",
+        "thead",
+        "tbody",
+        "tr",
+        "th",
+        "td"
+      ],
+      "largeImage": true,
+      "showPreview": false
+    },
+
+    {
+      "title": "Pitanje 10/10",
+      "text": "Pronađi u Foundation Documentation komponentu prikazanu na slici i prepiši njezin HTML kod.",
+      "image": "../img/foundation10.png",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n\n</body>\n</html>",
+      "requiredClasses": [
+        "row",
+        "columns",
+        "large-12",
+        "large-4",
+        "large-6",
+        "small-9",
+        "small-3",
+        "collapse",
+        "postfix"
+      ],
+      "requiredTags": [
+        "form",
+        "input",
+        "select",
+        "option",
+        "textarea"
+      ],
+      "showPreview": false
+    }
+
+  ]
+}

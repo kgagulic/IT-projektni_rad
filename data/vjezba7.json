@@ -1,0 +1,21 @@
+{
+  "questions": [
+    {
+      "title": "Klik mijenja boju kvadrata",
+      "text": "Napiši jQuery kod koji će klikom na gumb promijeniti boju kvadrata iz zelene u crvenu.",
+
+      "showJSON": true,
+
+      "starterCode": "<button id='btn'>Klikni</button>\n<div id='box' style='width:100px;height:100px;background:green;margin-top:10px;'></div>",
+
+      
+
+      "starterPreviewCSS": "",
+
+      "requiredJSON": {
+        "selector": "#box",
+        "backgroundColor": "red"
+      }
+    }
+  ]
+}

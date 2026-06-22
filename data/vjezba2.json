@@ -77,7 +77,7 @@
 
       "image": "../img/figure_figcaption.png",
 
-      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n<img src=\"elephant.jpg\" />\n</body>\n</html>",
+      "starterCode": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Zadatak</title>\n</head>\n<body>\n<img src=\"/img/slon.png\" />\n</body>\n</html>",
 
       "requiredTags": ["figure", "figcaption"],
 
