@@ -1,156 +1,446 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #f4f4f2;
+  --paper: #ffffff;
+  --ink: #111111;
+  --muted: #6c6c69;
+  --line: #d9d9d5;
+  --soft: #ecece8;
+  --dark-soft: #242424;
+  --success: #18734f;
+  --danger: #b43b43;
+  --highlight: #e8eef3;
+  --highlight-line: #aab9c5;
+  --highlight-dark: #263540;
+  --radius: 12px;
+  --shadow: 0 14px 34px rgba(0, 0, 0, .07);
 }
 
-/* ---------- POČETNA STRANICA ---------- */
-
-.card {
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body,
+body.bg-light {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg) !important;
+  font-family: "DM Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.btn-option {
-    text-align: center;
-    transition: 0.2s ease;
+a { color: inherit; }
+
+/* Zaglavlje svih stranica */
+header.bg-dark {
+  position: relative;
+  padding: 22px max(20px, calc((100vw - 1160px) / 2)) 42px !important;
+  color: var(--ink) !important;
+  text-align: left !important;
+  background: var(--paper) !important;
+  border-bottom: 1px solid var(--line);
+  box-shadow: none !important;
 }
 
-.btn-option:hover {
-    transform: translateY(-4px);
+header.bg-dark h1 {
+  max-width: 820px;
+  margin: 46px 0 0 !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.25rem, 5vw, 4.15rem);
+  line-height: 1.02;
+  letter-spacing: -.055em;
 }
 
-/* ---------- NAVIGACIJA ---------- */
+header.bg-dark > p {
+  max-width: 620px;
+  margin: 15px 0 0 !important;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
 
 .top-menu {
-    text-align: right;
-    margin-bottom: 40px;
-    margin-right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  margin: 0;
+}
+
+.top-menu::before {
+  content: "OMS";
+  margin-right: auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
 }
 
 .top-menu a {
-    color: white;
-    text-decoration: none;
-    margin-left: 12px;
-    font-size: 1rem;
-    padding: 8px 16px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255,0.15);
-    transition: all 0.2s ease;
+  padding: 9px 13px;
+  border-radius: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: .94rem;
+  font-weight: 600;
+  transition: color .18s ease, background .18s ease;
 }
 
 .top-menu a:hover {
-    background-color: rgba(255,255,255,0.3);
+  color: var(--ink);
+  background: var(--soft);
 }
 
-/* ---------- KVIZ ---------- */
-
-#quiz {
-    padding: 10px;
+/* Glavni sadržaj */
+main.container,
+.container.py-5 {
+  width: min(1160px, calc(100% - 40px));
+  max-width: none;
+  margin: 0 auto;
+  padding-top: 42px !important;
+  padding-bottom: 70px !important;
 }
 
+/* Početna stranica */
+.btn-option {
+  position: relative;
+  display: flex;
+  min-height: 285px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px !important;
+  overflow: hidden;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  color: var(--ink) !important;
+  text-align: left !important;
+  background: var(--paper) !important;
+  box-shadow: none !important;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.btn-option::before {
+  content: "01";
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.row > div:nth-child(2) > .btn-option::before { content: "02"; }
+
+.btn-option::after {
+  content: "↗";
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  color: var(--muted);
+  font-size: 1.35rem;
+  transition: transform .2s ease;
+}
+
+.btn-option:hover {
+  transform: translateY(-4px);
+  border-color: #b8b8b2 !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.btn-option:hover::after { transform: translate(3px, -3px); }
+.btn-option h2 {
+  margin-bottom: 9px !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  letter-spacing: -.04em;
+}
+.btn-option p { color: var(--muted); }
+
+.row > div:nth-child(2) > .btn-option {
+  color: white !important;
+  background: var(--ink) !important;
+  border-color: var(--ink) !important;
+}
+.row > div:nth-child(2) > .btn-option p,
+.row > div:nth-child(2) > .btn-option::after { color: #b6b6b2; }
+.row > div:nth-child(2) > .btn-option::before { border-color: #484848; }
+
+/* Odabir predavanja i vježbi */
+.menu.row,
+main .row.g-3 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px !important;
+}
+
+.menu.row > [class*="col-"],
+main .row.g-3 > [class*="col-"] {
+  width: auto;
+  padding: 0;
+}
+
+.menu .btn,
+main .row.g-3 .btn {
+  position: relative;
+  display: flex;
+  min-height: 88px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 62px 18px 76px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 11px !important;
+  color: var(--ink) !important;
+  text-align: left;
+  background: var(--paper) !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: none;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.menu .btn::before,
+main .row.g-3 .btn::before {
+  position: absolute;
+  left: 18px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 9px;
+  color: var(--ink);
+  background: var(--soft);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.menu .btn::after,
+main .row.g-3 .btn::after {
+  content: "→";
+  position: absolute;
+  right: 20px;
+  color: #a1a19d;
+  font-size: 1.1rem;
+}
+
+.menu > div:nth-child(1) .btn::before { content: "01"; }
+.menu > div:nth-child(2) .btn::before { content: "02"; }
+.menu > div:nth-child(3) .btn::before { content: "03"; }
+.menu > div:nth-child(4) .btn::before { content: "04"; }
+.menu > div:nth-child(5) .btn::before { content: "05"; }
+.menu > div:nth-child(6) .btn::before { content: "K1"; }
+.menu > div:nth-child(7) .btn::before { content: "07"; }
+.menu > div:nth-child(8) .btn::before { content: "08"; }
+.menu > div:nth-child(9) .btn::before { content: "09"; }
+.menu > div:nth-child(10) .btn::before { content: "10"; }
+.menu > div:nth-child(11) .btn::before { content: "11"; }
+.menu > div:nth-child(12) .btn::before { content: "K2"; }
+
+main .row.g-3 > div:nth-child(1) .btn::before { content: "01"; }
+main .row.g-3 > div:nth-child(2) .btn::before { content: "02"; }
+main .row.g-3 > div:nth-child(3) .btn::before { content: "03"; }
+main .row.g-3 > div:nth-child(4) .btn::before { content: "04"; }
+main .row.g-3 > div:nth-child(5) .btn::before { content: "05"; }
+main .row.g-3 > div:nth-child(6) .btn::before { content: "06"; }
+main .row.g-3 > div:nth-child(7) .btn::before { content: "07"; }
+
+.menu .btn:hover,
+main .row.g-3 .btn:hover {
+  transform: translateY(-2px);
+  border-color: #adada7 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
+}
+
+.menu .btn-warning {
+  color: var(--highlight-dark) !important;
+  background: var(--highlight) !important;
+  border-color: var(--highlight-line) !important;
+}
+.menu .btn-warning::before {
+  color: white;
+  background: var(--highlight-dark);
+}
+.menu .btn-warning::after { color: var(--highlight-dark); }
+.menu .btn-warning:hover {
+  border-color: var(--highlight-dark) !important;
+  background: #dfe8ee !important;
+}
+
+/* Kartice kviza i rezultata */
+.card {
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  background: var(--paper) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+#quiz { padding: 4px; }
 #quiz h2 {
-    margin-bottom: 25px;
+  margin: 0 0 26px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  letter-spacing: -.04em;
 }
-
-#quiz p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-}
-
-
-/* odgovori */
-
+#quiz p { margin-bottom: 22px; font-size: 1.06rem; line-height: 1.65; }
 #answers label {
-    display: block;
-    padding: 12px 16px;
-    margin-bottom: 12px;
-
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-
-    cursor: pointer;
-    transition: 0.2s;
+  display: block;
+  margin-bottom: 10px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  cursor: pointer;
+  background: white;
+  transition: border-color .16s ease, background .16s ease;
+}
+#answers label:hover { border-color: #9e9e98; background: #fafaf8; }
+#answers input[type="radio"], #answers input[type="checkbox"] { margin-right: 10px; accent-color: var(--ink); }
+#quiz input[type="text"], textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  color: var(--ink);
+  background: white;
+  outline: none;
+}
+#quiz input[type="text"]:focus, textarea:focus {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, .08);
 }
 
-#answers label:hover {
-    background-color: #f8f9fa;
-    border-color: #0d6efd;
-}
-
-#answers input[type="radio"],
-#answers input[type="checkbox"] {
-    transform: scale(1.2);
-    margin-right: 10px;
-}
-
-/* text boxovi */
-
-#quiz input[type="text"] {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px 12px;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-    margin-bottom: 12px;
-}
-
-/* gumb */
-
+.btn,
 #quiz button {
-    background-color: #0d6efd;
-    color: white;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.2s;
-    margin-top: 15px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  padding: 11px 20px;
+  color: white;
+  background: var(--ink);
+  font-weight: 700;
+  transition: transform .18s ease, background .18s ease;
+}
+#quiz button { margin-top: 18px; }
+.btn:hover,
+#quiz button:hover { color: white; transform: translateY(-1px); background: var(--dark-soft); }
+
+.alert-info,
+#result {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  background: var(--soft);
+}
+#review { border: 1px solid var(--line); border-radius: 10px; background: white; }
+.correct { color: white !important; background: var(--success) !important; }
+.wrong { color: white !important; background: var(--danger) !important; }
+
+/* Stranica praktičnih rezultata nema header pa navigacija postaje gornja traka */
+body > .container > .top-menu {
+  margin-bottom: 46px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+body > .container > h1 {
+  margin: 0 0 26px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: -.045em;
+}
+body > .container > #result { margin-bottom: 22px; }
+
+@media (max-width: 800px) {
+  header.bg-dark { padding-inline: 20px !important; }
+  .top-menu { overflow-x: auto; }
+  .top-menu a { white-space: nowrap; }
+  main.container, .container.py-5 { width: min(100% - 28px, 1160px); }
+  .menu.row, main .row.g-3 { grid-template-columns: 1fr; }
+  .btn-option { min-height: 235px; }
 }
 
-#quiz button:hover {
-    background-color: #0b5ed7;
-    transform: translateY(-2px);
+@media (max-width: 520px) {
+  .top-menu::before { display: none; }
+  .top-menu { justify-content: center; }
+  .top-menu a { padding-inline: 9px; }
+  header.bg-dark h1 { font-size: 2.35rem; }
+  .menu .btn, main .row.g-3 .btn { padding-right: 48px !important; }
 }
 
-/* rezultati */
+/* =====================================================
+   PRAKTIČNI IZBORNIK — brojevi i kolokviji
+   ===================================================== */
 
-.correct {
-    background-color: #28a745 !important;
-    color: white !important;
+/* Na praktičnom izborniku broj se čita iz data-number atributa. */
+.practical-menu .btn::before {
+  content: attr(data-number) !important;
 }
 
-.wrong {
-    background-color: #dc3545 !important;
-    color: white !important;
+/* Tri uredna stupca na većim ekranima. */
+main .row.g-3.practical-menu {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-/* ---------- MOBITEL ---------- */
-
-@media (max-width: 768px) {
-
-    .top-menu {
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 25px;
-    }
-
-    .top-menu a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    #quiz p {
-        font-size: 1rem;
-    }
+/* Kolokviji su istaknuti jednako kao u teorijskom dijelu. */
+.menu a[href*="kolokvij"],
+.practical-menu a[href*="kolokvij"] {
+  color: var(--highlight-dark) !important;
+  background: var(--highlight) !important;
+  border-color: var(--highlight-line) !important;
+  box-shadow: inset 4px 0 0 var(--highlight-dark) !important;
 }
 
-.normal-image {
-    max-width: 400px;
+.menu a[href*="kolokvij"]::before,
+.practical-menu a[href*="kolokvij"]::before {
+  color: #ffffff !important;
+  background: var(--highlight-dark) !important;
 }
 
-.large-image {
-    max-width: 1000px;
-    width: 100%;
+.menu a[href*="kolokvij"]::after,
+.practical-menu a[href*="kolokvij"]::after {
+  color: var(--highlight-dark) !important;
+}
+
+.menu a[href*="kolokvij"]:hover,
+.practical-menu a[href*="kolokvij"]:hover {
+  color: var(--highlight-dark) !important;
+  background: #dfe8ee !important;
+  border-color: var(--highlight-dark) !important;
+  box-shadow:
+    inset 4px 0 0 var(--highlight-dark),
+    0 10px 25px rgba(38, 53, 64, .12) !important;
+}
+
+/* Slike u praktičnom kvizu ne izlaze iz kartice. */
+#quiz img.normal-image,
+#quiz img.large-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 980px) {
+  main .row.g-3.practical-menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  main .row.g-3.practical-menu {
+    grid-template-columns: 1fr;
+  }
+
+  #quiz img.normal-image,
+  #quiz img.large-image {
+    width: auto;
+    max-width: calc(100% - 16px);
+  }
 }
