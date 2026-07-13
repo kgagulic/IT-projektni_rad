@@ -247,7 +247,7 @@ main .row.g-3 > div:nth-child(2) .btn::before { content: "02"; }
 main .row.g-3 > div:nth-child(3) .btn::before { content: "03"; }
 main .row.g-3 > div:nth-child(4) .btn::before { content: "04"; }
 main .row.g-3 > div:nth-child(5) .btn::before { content: "05"; }
-main .row.g-3 > div:nth-child(6) .btn::before { content: "06"; }
+main .row.g-3 > div:nth-child(6) .btn::before { content: "K1"; }
 main .row.g-3 > div:nth-child(7) .btn::before { content: "07"; }
 
 .menu .btn:hover,
@@ -278,6 +278,22 @@ main .row.g-3 .btn:hover {
   border-radius: var(--radius) !important;
   background: var(--paper) !important;
   box-shadow: var(--shadow) !important;
+}
+
+.result-title{
+    margin-bottom: 8px;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.quiz-subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #6c757d;
+    margin-top: 8px;
 }
 
 #quiz { padding: 4px; }
@@ -338,7 +354,7 @@ main .row.g-3 .btn:hover {
 }
 #review { border: 1px solid var(--line); border-radius: 10px; background: white; }
 .correct { color: white !important; background: var(--success) !important; }
-.wrong { color: white !important; background: var(--danger) !important; }
+.incorrect { color: white !important; background: var(--danger) !important; }
 
 /* Stranica praktičnih rezultata nema header pa navigacija postaje gornja traka */
 body > .container > .top-menu {

@@ -1,6 +1,19 @@
 const params = new URLSearchParams(window.location.search);
 const set = params.get("set") || 1;
 
+let quizTitle = "";
+
+if (set === "kolokvij1") {
+  quizTitle = "Vježba za prvi kolokvij";
+} else if (set === "kolokvij2") {
+  quizTitle = "Vježba za drugi kolokvij";
+} else {
+  quizTitle = `Predavanje ${set}`;
+}
+
+document.getElementById("quiz-title").textContent =
+  `Kviz znanja - ${quizTitle}`;
+
 let questions = [];
 let currentIndex = 0;
 let score = 0;
@@ -208,6 +221,9 @@ function finish() {
   localStorage.setItem("score", score);
   localStorage.setItem("total", questions.length);
   localStorage.setItem("answers", JSON.stringify(userAnswers));
+  localStorage.setItem("set", set);
+  localStorage.setItem("quizTitle", quizTitle);
 
   window.location.href = "../kviz/rezultati.html";
+
 }
