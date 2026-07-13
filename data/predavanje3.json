@@ -47,7 +47,7 @@
         "question": "Koja je ovo vrsta selektora?",
         "type": "single",
         "image": "../img/selektor_identif.png",
-        "options": ["Selektor identifikacije","Univerzalni selektor", "Selektor klase","Selektor elemnta"],
+        "options": ["Selektor identifikacije","Univerzalni selektor", "Selektor klase","Selektor elementa"],
         "correct": "Selektor identifikacije"
     },
     {
@@ -89,21 +89,21 @@
         "question": "Koja je ovo vrsta selektora?",
         "type": "single",
         "image": "../img/selektor_komb.png",
-        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor klase","Selektor elemnta"],
+        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor klase","Selektor elementa"],
         "correct": "Kobinator susjednih rođaka"
     },
     {
         "question": "Koja je ovo vrsta selektora?",
         "type": "single",
         "image": "../img/selektor_atr.png",
-        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elemnta"],
+        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elementa"],
         "correct": "Selektor atributa"
     },
     {
         "question": "Koja je ovo vrsta selektora?",
         "type": "single",
         "image": "../img/selektor_atr.png",
-        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elemnta"],
+        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elementa"],
         "correct": "Selektor atributa"
     },
     {
@@ -114,7 +114,7 @@
         "correct": "Zelena"
     },
     {
-        "question": "Koje je boje tekst 'Ne zaboraci pročitati dodatnu literaturu!'?",
+        "question": "Koje je boje tekst 'Ne zaboravi pročitati dodatnu literaturu!'?",
         "type": "single",
         "image": "../img/css_pitanja.png",
         "options": ["Zelena","Plava","Crvena","Crna"],
@@ -128,7 +128,7 @@
         "correct": "Plava"
     },
     {
-        "question": "Zašto je tekst 'Ne zaboraci pročitati dodatnu literaturu!' crvene boje?",
+        "question": "Zašto je tekst 'Ne zaboravi pročitati dodatnu literaturu!' crvene boje?",
         "type": "single",
         "image": "../img/css_pitanja.png",
         "options": ["Zbog selektora elementa p",
