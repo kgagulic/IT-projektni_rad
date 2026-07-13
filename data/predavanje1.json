@@ -98,6 +98,6 @@
     "question": "Označite IT konferencije:",
     "type": "multiple",
     "options": ["KulenDayz", "KulenovaSekaDayz", "The Geek Gathering", "DigitalLabin", "Shift", "DataShift Conference", "IT Nexus Conference", "TechFusion Summit"],
-    "correct": ["KulenDayz", "The Geek Gathering", "Shift", "DataShift Conference"]
+    "correct": ["KulenDayz", "The Geek Gathering", "Shift", "DataShift Conference", "DigitalLabin"]
   }
 ]
