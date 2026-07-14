@@ -3,18 +3,121 @@
     {
       "title": "Klik mijenja boju kvadrata",
       "text": "Napiši jQuery kod koji će klikom na gumb promijeniti boju kvadrata iz zelene u crvenu.",
-
       "showJSON": true,
-
       "starterCode": "<button id='btn'>Klikni</button>\n<div id='box' style='width:100px;height:100px;background:green;margin-top:10px;'></div>",
-
-      
-
+      "starterJS": "$(document).ready(function () {\n\n});",
       "starterPreviewCSS": "",
-
       "requiredJSON": {
         "selector": "#box",
+        "triggerSelector": "#btn",
         "backgroundColor": "red"
+      }
+    },
+    {
+      "title": "Dvostruki klik sakriva tekst",
+      "text": "Napiši jQuery kod koji će dvostrukim klikom na gumb sakriti odlomak.",
+      "showJSON": true,
+      "starterCode": "<button id='btn'>Dvostruki klik</button>\n<p id='tekst'>Ovo je primjer teksta.</p>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#tekst",
+        "triggerSelector": "#btn"
+      }
+    },
+    {
+      "title": "Prikaz skrivenog okvira",
+      "text": "Napiši jQuery kod koji će klikom na gumb prikazati skriveni kvadrat.",
+      "showJSON": true,
+      "starterCode": "<button id='btn'>Prikaži</button>\n<div id='box' style='display:none;width:100px;height:100px;background:orange;margin-top:10px;'></div>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#box",
+        "triggerSelector": "#btn"
+      }
+    },
+    {
+      "title": "Postupni prikaz kvadrata",
+      "text": "Napiši jQuery kod koji će klikom na gumb postupno prikazati kvadrat.",
+      "showJSON": true,
+      "starterCode": "<button id='btn'>Prikaži</button>\n<div id='box' style='display:none;width:100px;height:100px;background:purple;margin-top:10px;'></div>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#box",
+        "triggerSelector": "#btn"
+      }
+    },
+    {
+      "title": "Postupno skrivanje kvadrata",
+      "text": "Napiši jQuery kod koji će klikom na gumb postupno sakriti kvadrat.",
+      "showJSON": true,
+      "starterCode": "<button id='btn'>Sakrij</button>\n<div id='box' style='width:100px;height:100px;background:purple;margin-top:10px;'></div>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#box",
+        "triggerSelector": "#btn"
+      }
+    },
+    {
+      "title": "Promjena teksta",
+      "text": "Napiši jQuery kod koji će klikom na gumb promijeniti sadržaj odlomka u 'Pozdrav svijete!'.",
+      "showJSON": true,
+      "starterCode": "<button id='btn'>Promijeni tekst</button>\n<p id='tekst'>Stari tekst</p>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#tekst",
+        "triggerSelector": "#btn"
+      }
+    },
+    {
+      "title": "Promjena atributa",
+      "text": "Napiši jQuery kod koji će klikom na gumb promijeniti vrijednost atributa title odlomka u 'Novi naslov'.",
+      "showJSON": true,
+      "starterCode": "<button id='btn'>Promijeni atribut</button>\n<p id='tekst' title='Stari naslov'>Prijeđi mišem preko teksta.</p>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#tekst",
+        "triggerSelector": "#btn"
+      }
+    },
+    {
+      "title": "Promjena veličine fonta",
+      "text": "Napiši jQuery kod koji će klikom na gumb promijeniti veličinu fonta odlomka na 30px.",
+      "showJSON": true,
+      "starterCode": "<button id='btn'>Povećaj font</button>\n<p id='tekst'>Primjer teksta</p>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#tekst",
+        "triggerSelector": "#btn"
+      }
+    },
+    {
+      "title": "Prelazak miša mijenja boju",
+      "text": "Napiši jQuery kod koji će prelaskom miša preko kvadrata promijeniti njegovu boju u plavu.",
+      "showJSON": true,
+      "starterCode": "<div id='box' style='width:100px;height:100px;background:gray;'></div>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#box",
+        "backgroundColor": "blue"
+      }
+    },
+    {
+      "title": "Tipkanje prikazuje tekst",
+      "text": "Napiši jQuery kod koji će tijekom tipkanja u tekstualno polje prikazivati upisani tekst u odlomku.",
+      "showJSON": true,
+      "starterCode": "<input id='unos' type='text'>\n<p id='rezultat'></p>",
+      "starterJS": "$(document).ready(function () {\n\n});",
+      "starterPreviewCSS": "",
+      "requiredJSON": {
+        "selector": "#rezultat"
       }
     }
   ]

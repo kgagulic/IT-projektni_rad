@@ -540,23 +540,26 @@ function provjeriJQuery() {
                 }
 
                 const selektorPokretaca =
-                    pravila.triggerSelector || "#btn";
+                    pravila.triggerSelector || null;
 
-                const pokretac =
-                    iframeDocument.querySelector(
-                        selektorPokretaca
-                    );
+                if (selektorPokretaca) {
 
-                if (!pokretac) {
-                    prikaziPoruku(
-                        "danger",
-                        `Nije pronađen element ${selektorPokretaca} koji pokreće promjenu.`
-                    );
+                    const pokretac =
+                        iframeDocument.querySelector(
+                            selektorPokretaca
+                        );
 
-                    return;
-                }
+                    if (!pokretac) {
+                        prikaziPoruku(
+                            "danger",
+                            `Nije pronađen element ${selektorPokretaca} koji pokreće promjenu.`
+                        );
 
-                pokretac.click();
+                        return;
+                    }
+
+                    pokretac.click();
+}
 
                 setTimeout(() => {
                     const stil =
