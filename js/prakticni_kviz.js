@@ -806,7 +806,7 @@ function provjeriBodyElement(html) {
         return {
             tocno: false,
             poruka:
-                "Netočno. Nedostaje ispravno otvoren i zatvoren <body> element."
+                "Netočno. Nedostaje ispravno otvoren i zatvoren element."
         };
     }
 
@@ -817,7 +817,7 @@ function provjeriBodyElement(html) {
         return {
             tocno: false,
             poruka:
-                "Element <body> postoji, ali nije na ispravnom mjestu."
+                "Element postoji, ali nije na ispravnom mjestu."
         };
     }
 
@@ -828,7 +828,7 @@ function provjeriBodyElement(html) {
         return {
             tocno: false,
             poruka:
-                "Element <body> mora se nalaziti nakon elementa <head>."
+                "Element nije na ispravnom mjestu."
         };
     }
 
@@ -836,7 +836,7 @@ function provjeriBodyElement(html) {
         return {
             tocno: false,
             poruka:
-                "Završna oznaka </body> nalazi se prije početne oznake <body>."
+                "Završna oznaka nije na ispravnom mjestu."
         };
     }
 
@@ -847,7 +847,7 @@ function provjeriBodyElement(html) {
         return {
             tocno: false,
             poruka:
-                "Element <body> mora se nalaziti unutar elementa <html>."
+                "Element nije na ispravnom mjestu."
         };
     }
 
@@ -901,7 +901,7 @@ function provjeriZatvaranjeTagova(html) {
                 return {
                     tocno: false,
                     poruka:
-                        `Završna oznaka </${naziv}> nema odgovarajuću početnu oznaku.`
+                        `Element nije ispravno napisan.`
                 };
             }
 
@@ -912,7 +912,7 @@ function provjeriZatvaranjeTagova(html) {
                 return {
                     tocno: false,
                     poruka:
-                        `Element <${zadnjiOtvoreni}> nije ispravno zatvoren.`
+                        `Element nije ispravno zatvoren.`
                 };
             }
 
@@ -929,7 +929,7 @@ function provjeriZatvaranjeTagova(html) {
         return {
             tocno: false,
             poruka:
-                `Element <${nezatvoreniTag}> nije zatvoren.`
+                `Element nije zatvoren.`
         };
     }
 
@@ -988,7 +988,7 @@ function provjeriHTML(pitanje, html) {
             return {
                 tocno: false,
                 poruka:
-                    "U HTML dokumentu nedostaje ispravno otvoren i zatvoren <body> element."
+                    "U HTML dokumentu nedostaje ispravan element."
             };
         }
 
@@ -1020,14 +1020,14 @@ function provjeriHTML(pitanje, html) {
                 return {
                     tocno: false,
                     poruka:
-                        `Element <${tag}> postoji, ali nije na ispravnom mjestu.`
+                        `Element postoji, ali nije na ispravnom mjestu.`
                 };
             }
 
             return {
                 tocno: false,
                 poruka:
-                    `Netočno. Koristi ispravan element <${tag}>.`
+                    `Netočno. Koristi ispravan element.`
             };
         }
     }
@@ -1053,7 +1053,7 @@ function provjeriHTML(pitanje, html) {
             return {
                 tocno: false,
                 poruka:
-                    `Element <${tag}> postoji, ali nema sadržaja.`
+                    `Element postoji, ali nema sadržaja.`
             };
         }
     }
@@ -1082,14 +1082,14 @@ function provjeriHTML(pitanje, html) {
                 return {
                     tocno: false,
                     poruka:
-                        `Klasa "${nazivKlase}" postoji, ali element nije na ispravnom mjestu.`
+                        `Klasa postoji, ali element nije na ispravnom mjestu.`
                 };
             }
 
             return {
                 tocno: false,
                 poruka:
-                    `Netočno. Nedostaje obavezna klasa "${nazivKlase}".`
+                    `Netočno. Nedostaje obavezna klasa.`
             };
         }
     }
@@ -1156,7 +1156,7 @@ function provjeriCSS(pitanje, css) {
                 return {
                     tocno: false,
                     poruka:
-                        `Netočno. U CSS-u nedostaje traženo pravilo: ${pravilo}`
+                        `Netočno. U CSS-u nedostaje traženo.`
                 };
             }
         }
@@ -1193,7 +1193,7 @@ function provjeriCSS(pitanje, css) {
                 return {
                     tocno: false,
                     poruka:
-                        `Netočno. U CSS-u nedostaje selektor "${selektor}".`
+                        `Netočno. U CSS-u nedostaje selektor.`
                 };
             }
 
@@ -1212,7 +1212,7 @@ function provjeriCSS(pitanje, css) {
                     return {
                         tocno: false,
                         poruka:
-                            `Netočno. Za selektor "${selektor}" nedostaje pravilo "${svojstvo}: ${vrijednost}".`
+                            `Netočno.`
                     };
                 }
             }
