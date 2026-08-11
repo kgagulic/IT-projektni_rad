@@ -1,7 +1,11 @@
 [
     {
         "question": "Razriješi akronim RWD",
-        "type": "short",
+        "type": "single",
+        "options": ["Responsive Web Design",
+                    "Responsive Website Development",
+                    "Relative Web Design",
+                    "Responsive Web Deployment"],
         "correct": "Responsive Web Design"
     },
     {
@@ -12,7 +16,8 @@
     },
     {
         "question": "Koja se RWD radna okolina koristi na vježbama na kolegiju OMS?",
-        "type": "short",
+        "type": "single",
+        "options": ["Foundation", "Bootstrap", "Materialize", "Tailwind CSS"],
         "correct": "Foundation"
     },
     {
@@ -41,7 +46,12 @@
     },
     {
         "question": "Razriješi akronim CDN",
-        "type": "short",
+        "type": "single",
+        "options": [
+            "Content Delivery Network",
+            "Content Distribution Network",
+            "Central Data Network",
+            "Content Delivery Node"],
         "correct": "Content Delivery Network"
     },
     {

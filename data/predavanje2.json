@@ -6,7 +6,8 @@
     },
     {
         "question": "HTML je __________ jezik.",
-        "type": "short",
+        "type": "single",
+        "options": ["programski","označiteljski","stilski","skriptni"],
         "correct": "označiteljski"
     },
     {
@@ -21,22 +22,26 @@
     },
     {
         "question": "HTML se sastoji od _________ kojima se označavaju tekst, slike i drugi sadržaji.",
-        "type": "short",
+        "type": "single",
+        "options": ["oznaka", "grana", "imena", "skupina"], 
         "correct": "oznaka"
     },
     {
         "question": "Oznaka <_____> koristi se za označavanje naslova u HTML-u.",
-        "type": "short",
+        "type": "single",
+        "options": ["body","head","hr","header"],
         "correct": "title"
     },
     {
         "question": "Oznaka <_____> označava vidljivi dio HTML dokumenta.",
-        "type": "short",
+        "type": "single",
+        "options": ["head", "html", "body", "main"],
         "correct": "body"
     },
     {
         "question": "Kako se označava korijenski element HTML dokumenta? <______>.",
-        "type": "short",
+        "type": "single",
+        "options": ["head", "body", "html", "document"],
         "correct": "html"
     },
     {
@@ -94,8 +99,9 @@
     "correct": "interaktivnim elementima"
     },
     {
-    "question": "Atributi zajednički za sve elemente zovu se ________ atributi",
-    "type": "short",
+    "question": "Atributi zajednički za sve HTML elemente zovu se ________ atributi.",
+    "type": "single",
+    "options": ["globalni", "univerzalni", "zajednički", "naslijeđeni"],
     "correct": "globalni"
     },
     {

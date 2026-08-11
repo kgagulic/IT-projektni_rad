@@ -7,23 +7,25 @@
   {
     "question": "Kolegij Oblikovanje mrežnih stranica nosi __ ECTS-a za dvopredmetni studij.",
     "type": "number",
-    "correct": 3
+    "correct": "3"
   },
   {
     "question": "Označi koje stranice možeš koristiti kao literaturu ili kao pomoć na vježbama:",
     "type": "multiple",
     "options": ["W3Schools", "W3C", "CodeCademy", "Wikipedija"],
-    "correct": ["W3Schools", "W3C", "CodeCademy"]
+    "correct": ["W3C", "CodeCademy"]
   },
   {
     "question": "Tko je napisao članak Information Management: A Proposal?",
-    "type": "short",
+    "type": "single",
+    "options": ["Tim Berners-Lee", "Ted Nelson", "Vannevar Bush", "Robert Cailliau"],
     "correct": "Tim Berners-Lee"
   },
   {
     "question": "Kako se zove članak koji je 1989. godine napisao Tim Berners-Lee?",
-    "type": "short",
-    "correct": "information management a proposal"
+    "type": "single",
+    "options": ["Information Management: A proposal", "The Hypertext Information System", "A Distributed Information Network", "Information Systems and Global Communication"],
+    "correct": "Information Management: A proposal"
   },
   {
     "question": "Kako se zove prvi preglednik mrežnih stranica (iz 1991.)?",

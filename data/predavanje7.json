@@ -21,8 +21,13 @@
     },
     {
         "question": "Razriješi akronim SEO.",
-        "type": "short",
+        "type": "single",
+        "options": ["Search Engine Optimization",
+                        "Search Engine Organization",
+                        "System Engine Optimization",
+                        "Search Experience Optimization"],
         "correct": "Search Engine Optimization"
+
     },
     {
         "question": "WebP je:",

@@ -75,13 +75,23 @@
     },
     {
         "question": "Razriješi akronim MVVM",
-        "type": "short",
+        "type": "single",
+        "options": [
+            "Model-View-View-Model",
+            "Model-View-Variable-Model",
+            "Model-View-View-Manager",
+            "Module-View-View-Model"],
         "correct": "Model-View-View-Model"
     },
     {
-        "question": "Razriješi akronim MVP",
-        "type": "short",
-        "correct": "Minimum Viable Product"
+        "question": "Razriješi akronim MVVM",
+        "type": "single",
+        "options": [
+            "Model-View-View-Model",
+            "Model-View-Variable-Model",
+            "Model-View-View-Manager",
+            "Module-View-View-Model"],
+        "correct": "Model-View-View-Model"
     },
     {
         "question": "Koji od navedenih programskih jezika se koristi na strani poslužitelja?",
@@ -123,7 +133,11 @@
     },
     {
         "question": "Razriješi akronim RDBMS",
-        "type": "short",
+        "type": "single",
+        "options": ["Relational Database Management System",
+                    "Relational Data Management System",
+                    "Remote Database Management System",
+                    "Relational Database Modeling System"],
         "correct": "Relational Database Management System"
     },
     {

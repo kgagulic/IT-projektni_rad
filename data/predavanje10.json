@@ -1,12 +1,17 @@
 [
     {
         "question": "Razriješi akronim SCSS.",
-        "type": "short",
+        "type": "single",
+        "options": ["Sassy Cascading Style Sheets",
+                    "Structured Cascading Style Sheets",
+                    "Syntactically Cascading Style Sheets",
+                    "Sassy Custom Style Sheets"],
         "correct": "Sassy Cascading Style Sheets"
     },
     {
         "question": "___ ________  je program koji vam omogućuje generiranje CSS-a iz jedinstvene sintakse predprocesora.",
-        "type":"short",
+        "type": "single",
+        "options": ["CSS predprocesor", "CSS prevoditelj", "CSS framework", "CSS parser"],
         "correct": "CSS predprocesor"
     },
     {

@@ -27,8 +27,12 @@
         "correct": "1995, Mocha"
     },
     {
-        "question": "Napišite JavaScript kod koji ispisuje poruku 'Hello World!' u konzoli.",
-        "type":"short",
+        "question": "Koji JavaScript kod ispisuje poruku 'Hello World!' u konzoli?",
+        "type": "single",
+        "options": [
+            "console.log(\"Hello World!\");",
+            "console.print(\"Hello World!\");",
+            "document.write(\"Hello World!\");"],
         "correct": "console.log(\"Hello World!\");"
     },
     {
@@ -79,7 +83,8 @@
     },
     {
         "question": "Koji je programski jezik spremljen pod ključem 'jezik' u asocijativniNiz?",
-        "type": "short",
+        "type": "single",
+         "options": ["Python", "JavaScript", "Java", "PHP"],
         "image": "../img/js_tipovi_podataka.png",
         "correct": "Python"
      },

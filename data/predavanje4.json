@@ -22,19 +22,30 @@
         "correct": ["SSH","FTSP","SFTP","WWW","e-mail", "grupe","TELNET"]
     },
     {
-        "question": "WWW se izvodi putem ______ ili ______ protokola.",
-        "type": "double",
-        "correct": ["HTTP", "HTTPS"]
+        "question": "Putem kojih se protokola izvodi WWW?",
+        "type": "single",
+        "options": ["HTTP ili HTTPS", "FTP ili SMTP", "HTTP ili FTP", "HTTPS ili SSH"],
+        "correct": "HTTP ili HTTPS"
     },
     {
         "question": "Razriješi akronim URL.",
-        "type": "short",
-        "correct": "Uniform Resource Locator"
+          "type": "single",
+        "options": [
+                "Uniform Resource Locator",
+                "Universal Resource Locator",
+                "Uniform Reference Locator",
+                "Universal Reference Link"],
+        "correct":"Uniform Resource Locator"
     },
     {
-        "question": "IPv4 ima mogućih 2^___ adresa, a IPv6 ima mogućih 2^___ adresa.",
-        "type": "doubleOrdered",
-        "correct": ["32", "64"]
+        "question": "Koliko mogućih adresa imaju IPv4 i IPv6?",
+        "type": "single",
+        "options": [
+            "IPv4: 2^32, IPv6: 2^128",
+            "IPv4: 2^32, IPv6: 2^64",
+            "IPv4: 2^64, IPv6: 2^128",
+            "IPv4: 2^16, IPv6: 2^64"],
+        "correct": "IPv4: 2^32, IPv6: 2^128"
     },
     {
         "question": "Svi URL-ovi su URI-ji i svi URI-ji su URL-ovi.",
@@ -52,35 +63,45 @@
         "correct": "true"
     },
     {
-        "question": "Ispiši putanju do datoteke 'style2.css'.",
-        "type": "short",
-        "image": "../img/putanja.png",
+        "question": "Koja je ispravna putanja do datoteke 'style2.css'?", 
+        "type": "single", "image": "../img/putanja.png", 
+        "options": [ "OMS/vjezbe_1/prezentacija_html/index/style2.css",
+                    "OMS/vjezbe_1/prezentacija_html/style2.css",
+                    "OMS/vjezbe_1/HTML_vjezba/style2.css",
+                    "OMS/prezentacija_html/index/style2.css"],
         "correct": "OMS/vjezbe_1/prezentacija_html/index/style2.css"
     },
     {
-        "question": "Ispiši putanju do datoteke 'index.html'.",
-        "type": "short",
-        "image": "../img/putanja.png",
-        "correct": "OMS/vjezbe_1/HTML_vjezba/index.html"
+        "question": "Koja je ispravna putanja do datoteke 'index.html'?", 
+        "type": "single", "image": "../img/putanja.png", 
+        "options": [ "OMS/vjezbe_1/HTML_vjezba/index.html", 
+                    "OMS/HTML_vjezba/vjezbe_1/index.html", 
+                    "OMS/vjezbe_1/index.html", 
+                    "OMS/vjezbe_1/HTML_vjezba/html/index.html" ], 
+        "correct": "OMS/vjezbe_1/HTML_vjezba/index.html" 
     },
     {
-        "question": "Razriješi akronim HTTPS.",
-        "type": "short",
+        "question": "Što znači akronim HTTPS?",
+        "type": "single",
+        "options": ["HyperText Transfer Protocol Secure", "HyperText Transmission Protocol Secure", "Hyper Transfer Text Protocol Security", "HyperText Transfer Protocol System"],
         "correct": "HyperText Transfer Protocol Secure"
     },
     {
         "question": "Razriješi akronim URI.",
-        "type": "short",
+        "type": "single",
+        "options": ["Uniform Resource Identifier", "Universal Resource Identifier", "Uniform Resource Interface", "Universal Reference Identifier"],
         "correct": "Uniform Resource Identifier"
     },
     {
         "question": "________ adresa je adresa od mjesta na kojem se nalazimo.",
-        "type": "short",
+        "type": "single",
+        "options": ["Apsolutna", "Relativna", "Lokalna", "Korijenska"],
         "correct": "Relativna"
     },
     {
         "question": "________ adresa pokazuje na datoteku bez obzira od kuda ju pozivamo.",
-        "type": "short",
+        "type": "single",
+        "options": ["Apsolutna", "Relativna", "Lokalna", "Korijenska"],
         "correct": "Apsolutna"
     },
     {

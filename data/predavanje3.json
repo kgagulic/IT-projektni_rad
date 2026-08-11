@@ -52,7 +52,8 @@
     },
     {
         "question": "CSS je _______ jezik.",
-        "type": "short",
+        "type": "single",
+        "options": ["programski","označiteljski","stilski"],
         "correct": "stilski"
     },
     {

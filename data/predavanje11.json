@@ -1,12 +1,17 @@
 [
     {
         "question": "Razriješi akronim CGI.",
-        "type": "short",
+        "type": "single",
+        "options": ["Common Gateway Interface", "Common Graphical Interface", "Central Gateway Integration", "Common General Interface"],        
         "correct": "Common Gateway Interface"
     },
     {
         "question": "Razriješi akronim PHP.",
-        "type": "short",
+        "type": "single",
+        "options": ["Hypertext Preprocessor",
+                    "Hypertext Processing Protocol",
+                    "Hypertext Programming Processor",
+                    "Hypertext Page Processor"],
         "correct": "Hypertext Preprocessor"
     },
     {
