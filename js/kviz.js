@@ -77,7 +77,7 @@ container.innerHTML = `
   ${q.image ? `<img src="${q.image}" style="max-width:300px; display:block; margin:10px 0;">` : ""}
 
   <div id="answers"></div>
-  <button onclick="nextQuestion()">Sljedeće</button>
+  <!--<button onclick="nextQuestion()">Sljedeće</button>-->
 `;
 
   const a = document.getElementById("answers");

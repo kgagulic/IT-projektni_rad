@@ -235,20 +235,20 @@ function prikaziPitanje() {
                 onclick="provjeriJQuery()">
                 Provjeri
             </button>
-
-            <button
+            <!--
+             <button
                 class="btn btn-secondary mt-2 ms-2"
                 onclick="sljedece()">
                 Preskoči
-            </button>
-
+            </button> 
+            -->
             <button
                 id="btnDalje"
                 class="btn btn-success mt-2 ms-2"
                 onclick="sljedece()"
                 style="display: none;">
                 Dalje
-            </button>
+            </button> 
 
             <div id="poruka" class="mt-3"></div>
         `;
@@ -318,13 +318,13 @@ function prikaziPitanje() {
             onclick="provjeri()">
             Provjeri
         </button>
-
+        <!--
         <button
             class="btn btn-secondary ms-2"
             onclick="sljedece()">
             Preskoči
         </button>
-
+        -->
         <button
             id="btnDalje"
             class="btn btn-success ms-2"
