@@ -29,7 +29,7 @@
     {
         "question": "Oznaka <_____> koristi se za označavanje naslova u HTML-u.",
         "type": "single",
-        "options": ["body","head","hr","header"],
+        "options": ["body","title","hr","header"],
         "correct": "title"
     },
     {
@@ -77,7 +77,7 @@
     {
     "question": "Koji elementi pripadaju ugrađenim dijelovima?",
     "type": "multiple",
-    "options": ["img", "video", "canvas", "audio","map"],
+    "options": ["img", "video", "canvas", "audio","map","ins"],
     "correct": ["img", "video", "canvas", "audio","map"]
     },
     {

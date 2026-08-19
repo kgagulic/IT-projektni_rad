@@ -13,8 +13,8 @@
     {
         "question": "Razriješite akronim CSS",
         "type": "single",
-        "options": ["Cascading Sheet Style","Cross Site Scripting","Cascading Style Sheet","Content Scrambling System"],
-        "correct": "Cascading Style Sheet"
+        "options": ["Cascading Sheet Style","Cross Site Scripting","Cascading Style Sheets","Content Scrambling System"],
+        "correct": "Cascading Style Sheets"
     },
     {
         "question": "Koliko vrsta CSS selektora postoji",
@@ -27,12 +27,6 @@
         "type": "single",
         "options": ["stvara prostor unutar elementa"," stvara prostor između dva elementa","stvara prored između teksta","stvara prostor oko elementa"],
         "correct": "stvara prostor oko elementa"
-    },
-    {
-        "question": "Izbaci uljeza",
-        "type": "single",
-        "options": ["lh","vw","ex","em","Q","vmax"],
-        "correct": "Q"
     },
     {
         "question": "Koja od sljedećih logičkih svojstava pripadaju svojstvu background",
@@ -91,14 +85,7 @@
         "type": "single",
         "image": "../img/selektor_komb.png",
         "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor klase","Selektor elementa"],
-        "correct": "Kobinator susjednih rođaka"
-    },
-    {
-        "question": "Koja je ovo vrsta selektora?",
-        "type": "single",
-        "image": "../img/selektor_atr.png",
-        "options": ["Kombinator susjednih rođaka","Univerzalni selektor", "Selektor atributa","Selektor elementa"],
-        "correct": "Selektor atributa"
+        "correct": "Kombinator susjednih rođaka"
     },
     {
         "question": "Koja je ovo vrsta selektora?",

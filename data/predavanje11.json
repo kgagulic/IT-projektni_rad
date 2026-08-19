@@ -33,7 +33,7 @@
         "correct": "Java Server Pages"
     },
     {
-        "question": "Django je web server framework za koji programski jezik?",
+        "question": "Django je web framework za koji programski jezik?",
         "type": "single",
         "options": ["Python",
                     "Java",

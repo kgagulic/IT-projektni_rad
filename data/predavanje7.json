@@ -1,6 +1,6 @@
 [
     {
-        "question": "Tko je napisao članak 'Information Management: A Proposal?",
+        "question": "Tko je napisao članak 'Information Management: A Proposal?'",
         "type": "single",
         "options": ["Tim Berners-Lee","Bill Gates","Steve Jobs","Ted Nelson"],
         "correct": "Tim Berners-Lee"
@@ -46,15 +46,6 @@
                     "dizajn logotipa",
                     "izrada mobilne aplikacije"],
         "correct": "povećanje organskog (besplatnog) prometa na web stranicu"
-    },
-    {
-        "question": "Organski promet označava:",
-        "type": "single",
-        "options": ["plaćene oglase na društvenim mrežama",
-                "posjete web stranici bez plaćenih oglasa",
-                "offline marketing",
-                "spam posjete"],
-        "correct": "posjete web stranici bez plaćenih oglasa"
     },
     {
         "question": "SEO utječe na:",

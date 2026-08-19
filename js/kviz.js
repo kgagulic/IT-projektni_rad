@@ -83,7 +83,7 @@ container.innerHTML = `
   const a = document.getElementById("answers");
 
   if (q.type === "single") {
-    q.options.forEach(o => {
+    shuffle(q.options).forEach(o => {
       a.innerHTML += `
         <label><input type="radio" name="ans" value="${o}">${o}</label><br>
       `;
@@ -119,18 +119,6 @@ else if (q.type === "number") {
     >
   `;
   }
-
-  else if (q.type === "double" || q.type === "doubleOrdered") {
-    a.innerHTML = `
-      <input type="text" id="text1"><br><br>
-      <input type="text" id="text2">
-    `;
-  }
-
-  else {
-    a.innerHTML = `<input type="text" id="text">`;
-  }
-
   
 }
 
@@ -151,16 +139,9 @@ function nextQuestion() {
     answer = document.querySelector("input[name='tf']:checked")?.value || "";
   }
 
-  else if (q.type === "double" || q.type === "doubleOrdered") {
-    answer = [
-      document.getElementById("text1").value.trim(),
-      document.getElementById("text2").value.trim()
-    ];
-  }
-
-  else {
-    answer = document.getElementById("text").value.trim();
-  }
+else if (q.type === "number") {
+  answer = document.getElementById("text").value.trim();
+}
 
   userAnswers.push({
     question: q.question,
@@ -191,25 +172,11 @@ function normalize(str) {
 function check(q, ans) {
   const c = q.correct;
 
-  // DOUBLE ORDERED
-  if (q.type === "doubleOrdered") {
-    return normalize(ans[0]) === normalize(c[0]) &&
-          normalize(ans[1]) === normalize(c[1]);
-}
-
-  // DOUBLE
-  if (q.type === "double") {
-    return JSON.stringify(ans.map(normalize).sort()) ===
-           JSON.stringify(c.map(normalize).sort());
-  }
-
-  // MULTIPLE
   if (q.type === "multiple") {
     return JSON.stringify(c.map(normalize).sort()) ===
            JSON.stringify(ans.map(normalize).sort());
   }
 
-  // SHORT s više mogućih odgovora
   if (Array.isArray(c)) {
     return c.some(el => normalize(el) === normalize(ans));
   }

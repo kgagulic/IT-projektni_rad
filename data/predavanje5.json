@@ -12,12 +12,6 @@
         "correct": "2020."
     },
     {
-        "question": "Koje je godine tamni način rada postao trend u dizajnu?",
-        "type": "single",
-        "options": ["2025.","2024.","2019.","2020."],
-        "correct": "2020."
-    },
-    {
         "question": "Koje je godine korištenje crno-bijele palete boja bilo trend u dizajnu?",
         "type": "single",
         "options": ["2025.","2024.","2019.","2020."],
@@ -69,19 +63,9 @@
         "type": "single",
         "options": ["Da, hrvatski nazivi se koriste",
                     "Da, ali se hrvatski nazivi ne koriste",
-                    "Ne, ali u izradi je",
+                    "Ne, ali u izradi su",
                     "Ne i nije u izradi"],
-        "correct": "Ne, ali u izradi je"
-    },
-    {
-        "question": "Razriješi akronim MVVM",
-        "type": "single",
-        "options": [
-            "Model-View-View-Model",
-            "Model-View-Variable-Model",
-            "Model-View-View-Manager",
-            "Module-View-View-Model"],
-        "correct": "Model-View-View-Model"
+        "correct": "Ne, ali u izradi su"
     },
     {
         "question": "Razriješi akronim MVVM",
@@ -112,7 +96,7 @@
         "correct": "Oracle"
     },
     {
-        "question": "Koji od navedenih su programski jezici za razvoj na strani poslužitelja?",
+        "question": "Koje se od navedenih tehnologija koriste za razvoj na strani poslužitelja??",
         "type": "multiple",
         "options": ["PHP",
             "NodeJS",

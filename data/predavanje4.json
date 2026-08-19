@@ -18,8 +18,8 @@
     {
         "question": "Koji servisi postoje na internet mreži?",
         "type": "multiple",
-        "options": ["SSH","FTSP","SFTP","WWW","e-mail", "grupe","TELNET"],
-        "correct": ["SSH","FTSP","SFTP","WWW","e-mail", "grupe","TELNET"]
+        "options": ["SSH","FTP","SFTP","WWW","e-mail", "grupe","TELNET","BIOS","RAM"],
+        "correct": ["SSH","SFTP","FTP","WWW","e-mail", "grupe","TELNET"]
     },
     {
         "question": "Putem kojih se protokola izvodi WWW?",

@@ -85,7 +85,7 @@ async function pokreniKviz() {
             pitanja = shuffle(grupe.flat()).slice(0, 10);
         } else if (set === "kolokvij2") {
             const grupe = await Promise.all(
-                [5, 6, 7, 8].map(ucitajVjezbu)
+                [5, 6, 7].map(ucitajVjezbu)
             );
 
             pitanja = shuffle(grupe.flat()).slice(0, 10);
@@ -235,13 +235,7 @@ function prikaziPitanje() {
                 onclick="provjeriJQuery()">
                 Provjeri
             </button>
-            <!--
-             <button
-                class="btn btn-secondary mt-2 ms-2"
-                onclick="sljedece()">
-                Preskoči
-            </button> 
-            -->
+
             <button
                 id="btnDalje"
                 class="btn btn-success mt-2 ms-2"
@@ -318,13 +312,6 @@ function prikaziPitanje() {
             onclick="provjeri()">
             Provjeri
         </button>
-        <!--
-        <button
-            class="btn btn-secondary ms-2"
-            onclick="sljedece()">
-            Preskoči
-        </button>
-        -->
         <button
             id="btnDalje"
             class="btn btn-success ms-2"

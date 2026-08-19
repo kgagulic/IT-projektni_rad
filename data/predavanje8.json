@@ -11,8 +11,8 @@
     {
         "question": "Označi RWD radne okoline",
         "type": "multiple",
-        "options": ["Tailwind", "UI/UX", "Figma","UI kit","Miligram","Bootstrap","Skeleton"],
-        "correct": ["Tailwind","UI kit","Miligram","Bootstrap", "Skeleton"]
+        "options": ["Tailwind", "UI/UX", "Figma","UIkit","Milligram","Bootstrap","Skeleton"],
+        "correct": ["Tailwind","UIkit","Milligram","Bootstrap", "Skeleton"]
     },
     {
         "question": "Koja se RWD radna okolina koristi na vježbama na kolegiju OMS?",

@@ -61,7 +61,7 @@
                     "petlju u petlji",
                     "petlju",
                     "beskonačnu petlju"],
-        "correct": "nastavak i prekid petlje"
+        "correct": "petlju u petlji"
     },
     {
         "question": "Koji tip podatka predstavlja vrijednost true ili false?",

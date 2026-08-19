@@ -40,18 +40,6 @@
     "correct": ["WorldWideWeb", "Mosaic", "Netscape Navigator", "Chrome", "Firefox"]
   },
   {
-    "question": "Koliko verzija HTML-a postoji?",
-    "type": "single",
-    "options": ["3", "4", "5", "6"],
-    "correct": "6"
-  },
-  {
-    "question": "Koliko verzija CSS-a postoji?",
-    "type": "single",
-    "options": ["2", "3", "4", "5"],
-    "correct": "3"
-  },
-  {
     "question": "Kada je izašla verzija HTML 1.0",
     "type": "number",
     "correct": "1991"
